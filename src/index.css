@@ -22,5 +22,4 @@ code {
   font-family: "Gotham-light";
   src: local("Gotham"), url("./font/Gotham\ Light.otf") format("truetype");
   font-style: normal;
-  font-weight: "900";
 }
