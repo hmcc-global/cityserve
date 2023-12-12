@@ -19,7 +19,9 @@ const HomeContainer = () => {
         display={{ base: "block", sm: "none" }}
         src={process.env.PUBLIC_URL + "images/social_needs_mobile.png"}
         bgColor="#99C6E6"
-        p="2em"
+        pt="1em"
+        pb="2em"
+        px="0.5em"
         w="100%"
       />
       <Image
@@ -56,8 +58,8 @@ const HomeContainer = () => {
       >
         <Image
           src={process.env.PUBLIC_URL + "images/how_mobile.png"}
-          p="0.5em"
-          w="80%"
+          py="1.5em"
+          w="95%"
         />
       </Flex>
       <VideoSection />
