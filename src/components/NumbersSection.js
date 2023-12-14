@@ -22,6 +22,7 @@ const NumbersSection = () => {
           textColor="#EFDDCB"
           textAlign="center"
           h="min-content"
+          lineHeight="80%"
         >
           {title}
         </Box>
