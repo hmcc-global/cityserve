@@ -3,6 +3,7 @@ import AboutSection from "./AboutSection";
 import VideoSection from "./VideoSection";
 import JoinUsSection from "./JoinUsSection";
 import InfoSection from "./InfoSection";
+import NumbersSection from "./NumbersSection";
 
 const HomeContainer = () => {
   return (
@@ -24,20 +25,7 @@ const HomeContainer = () => {
         px="0.5em"
         w="100%"
       />
-      <Image
-        display={{ base: "none", sm: "block" }}
-        src={process.env.PUBLIC_URL + "images/numbers.png"}
-        bgColor="#183B5D"
-        p="5em"
-        w="100%"
-      />
-      <Image
-        display={{ base: "block", sm: "none" }}
-        src={process.env.PUBLIC_URL + "images/numbers_mobile.png"}
-        bgColor="#183B5D"
-        p="1em"
-        w="100%"
-      />
+      <NumbersSection />
       <Flex
         display={{ base: "none", sm: "flex" }}
         justifyContent="center"
