@@ -86,7 +86,7 @@ const NumbersSection = () => {
       <VStack w="100%" gap="0" display={{ base: "flex", md: "none" }}>
         <HStack w="100%" gap={0}>
           {titleNumber(218, "Participants")}
-          <Center height="13vw">
+          <Center height="20vw">
             <Divider
               borderColor="#FFF9E8"
               orientation="vertical"
@@ -97,7 +97,7 @@ const NumbersSection = () => {
         </HStack>
         <HStack w="100%" gap={0}>
           {titleNumber(4, "NGOs")}
-          <Center height="13vw">
+          <Center height="20vw">
             <Divider
               borderColor="#FFF9E8"
               orientation="vertical"
