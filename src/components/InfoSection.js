@@ -17,29 +17,33 @@ const InfoSection = () => {
             <Text fontWeight={900} fontSize="2.5vw">
               PARTNERED WITH
             </Text>
-            <Image
+            {/* <Image
               src={process.env.PUBLIC_URL + "images/partnered_logo_1.jpg"}
               w="34%"
-            />
+            /> */}
           </HStack>
-          <HStack>
-            <VStack textColor="#183B5D" w="50%">
-              <HStack justifyContent="space-evenly">
+          <HStack w="100%">
+            <VStack textColor="#183B5D" w="100%">
+              <HStack justifyContent="space-evenly" w="100%">
                 <Image
                   src={process.env.PUBLIC_URL + "images/partnered_logo_2.png"}
-                  w="20%"
+                  w="14%"
                 />
                 <Image
                   src={process.env.PUBLIC_URL + "images/partnered_logo_3.png"}
-                  w="27%"
+                  w="17%"
                 />
                 <Image
                   src={process.env.PUBLIC_URL + "images/partnered_logo_4.png"}
-                  w="28%"
+                  w="19%"
+                />
+                <Image
+                  src={process.env.PUBLIC_URL + "images/partnered_logo_5.png"}
+                  w="11%"
                 />
               </HStack>
             </VStack>
-            <VStack w="50%">
+            {/* <VStack w="50%">
               <HStack justifyContent="space-evenly">
                 <Image
                   src={process.env.PUBLIC_URL + "images/partnered_logo_5.png"}
@@ -54,16 +58,16 @@ const InfoSection = () => {
                   w="28%"
                 />
               </HStack>
-            </VStack>
+            </VStack> */}
           </HStack>
-          <HStack justifyContent="space-around" w="100%">
+          {/* <HStack justifyContent="space-around" w="100%">
             <Text fontWeight={900} fontSize="2.5vw">
               NGOs
             </Text>
             <Text fontWeight={900} fontSize="2.5vw">
               Churches
             </Text>
-          </HStack>
+          </HStack> */}
         </VStack>
         <VStack
           w="40%"
@@ -114,27 +118,31 @@ const InfoSection = () => {
         <Text fontWeight={700} fontSize="4vw" mb="3">
           PARTNERED WITH
         </Text>
-        <HStack gap={0}>
-          <VStack w="40%" pl="3">
+        <HStack gap={0} paddingBottom={4}>
+          <VStack w="100%" pl="3">
             <HStack justifyContent="center">
               <Image
                 src={process.env.PUBLIC_URL + "images/partnered_logo_2.png"}
-                w="26%"
+                w="19%"
               />
               <Image
                 src={process.env.PUBLIC_URL + "images/partnered_logo_3.png"}
-                w="34%"
+                w="25%"
               />
               <Image
                 src={process.env.PUBLIC_URL + "images/partnered_logo_4.png"}
-                w="34%"
+                w="27%"
+              />
+              <Image
+                src={process.env.PUBLIC_URL + "images/partnered_logo_5.png"}
+                w="17%"
               />
             </HStack>
-            <Text fontWeight={700} fontSize="4vw">
+            {/* <Text fontWeight={700} fontSize="4vw">
               NGOs
-            </Text>
+            </Text> */}
           </VStack>
-          <VStack w="60%">
+          {/* <VStack w="60%">
             <HStack justifyContent="center">
               <Image
                 src={process.env.PUBLIC_URL + "images/partnered_logo_5.png"}
@@ -156,7 +164,7 @@ const InfoSection = () => {
             <Text fontWeight={700} fontSize="4vw">
               Churches
             </Text>
-          </VStack>
+          </VStack> */}
         </HStack>
         <VStack w="100%" textColor="#FFFFFF" bgColor="#183B5D" gap="0" pb="9">
           <Text fontWeight={600} fontSize="5vw">

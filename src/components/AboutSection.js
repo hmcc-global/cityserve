@@ -93,10 +93,11 @@ const AboutSection = () => {
               the city.
             </Text>
             <Text>
-              We want to see churches and organizations coming together on a
-              Sunday, to go beyond the four walls of the church and be God’s
-              witness by loving and serving the poor, marginalised, and
-              unreached people of Hong Kong.
+              CityServe Hong Kong was initiated by Harvest Mission Community
+              Church with a desire to see churches and organizations coming
+              together on a Sunday, to go beyond the four walls of the church.
+              We want to be God’s witness by loving and serving the poor,
+              marginalised, and unreached people of Hong Kong.
             </Text>
           </VStack>
         </HStack>
