@@ -11,7 +11,7 @@ const VideoSection = () => {
         py="2"
         fontSize={{ base: "3.5vw", sm: "2vw" }}
       >
-        CHECK OUT WHAT HAPPENED LAST YEAR!
+        CHECK OUT WHAT HAPPENED IN 2023!
       </Box>
       <AspectRatio mb="5" width="80%" ratio={16 / 9}>
         <iframe

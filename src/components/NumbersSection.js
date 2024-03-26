@@ -41,7 +41,7 @@ const NumbersSection = () => {
         px={{ base: "3", sm: "9" }}
         mb="5"
       >
-        AT CITYSERVE 2023, WE SAW
+        AT CITYSERVE 2024, WE SAW
       </Box>
       {/* pc-version */}
       <VStack display={{ base: "none", md: "flex" }} w="100%">
@@ -55,15 +55,15 @@ const NumbersSection = () => {
           gap="0"
         >
           <Box borderRightWidth="3px" w="25%" borderColor="#FFF9E8">
-            218
+            296
           </Box>
           <Box borderRightWidth="3px" w="25%" borderColor="#FFF9E8">
-            4
+            8
           </Box>
           <Box borderRightWidth="3px" w="25%" borderColor="#FFF9E8">
-            4
+            8
           </Box>
-          <Box w="25%">314</Box>
+          <Box w="25%">584</Box>
         </HStack>
         <HStack
           w="100%"
