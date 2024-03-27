@@ -6,7 +6,7 @@ const NumbersSection = () => {
       <VStack textAlign="center" w="100%" gap={0}>
         <Box
           w="50%"
-          fontSize="13vw"
+          fontSize="12.6vw"
           fontFamily="Gotham"
           fontWeight="900"
           textColor="#EFDDCB"
@@ -86,19 +86,19 @@ const NumbersSection = () => {
       {/* mobile version */}
       <VStack w="100%" gap="0" display={{ base: "flex", md: "none" }}>
         <HStack w="100%" gap={0}>
-          {titleNumber(218, "Participants")}
-          <Center height="20vw">
+          {titleNumber(296, "Participants")}
+          <Center height="19vw">
             <Divider
               borderColor="#FFF9E8"
               orientation="vertical"
               borderWidth="2px"
             />
           </Center>
-          {titleNumber(4, "Churches")}
+          {titleNumber(8, "Churches")}
         </HStack>
         <HStack w="100%" gap={0}>
-          {titleNumber(4, "NGOs")}
-          <Center height="20vw">
+          {titleNumber(8, "NGOs")}
+          <Center height="19vw">
             <Divider
               borderColor="#FFF9E8"
               orientation="vertical"
@@ -106,7 +106,7 @@ const NumbersSection = () => {
             />
           </Center>
           {titleNumber(
-            314,
+            584,
             <>
               people <br /> reached
             </>
