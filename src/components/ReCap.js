@@ -1,6 +1,6 @@
 import { Box, VStack, AspectRatio } from "@chakra-ui/react";
 
-const VideoSection = () => {
+const ReCap = () => {
   return (
     <VStack w="100%" bgColor="#183B5D" gap="5" py="10">
       <Box
@@ -25,4 +25,4 @@ const VideoSection = () => {
   );
 };
 
-export default VideoSection;
+export default ReCap;

@@ -1,6 +1,6 @@
 import { Image, VStack, Flex } from "@chakra-ui/react";
 import AboutSection from "./AboutSection";
-import VideoSection from "./VideoSection";
+import ReCap from "./ReCap";
 import JoinUsSection from "./JoinUsSection";
 import InfoSection from "./InfoSection";
 import NumbersSection from "./NumbersSection";
@@ -9,48 +9,7 @@ const HomeContainer = () => {
   return (
     <VStack gap={0}>
       <AboutSection />
-      <Image
-        display={{ base: "none", sm: "block" }}
-        src={process.env.PUBLIC_URL + "images/social_needs.png"}
-        bgColor="#99C6E6"
-        p="5em"
-        w="100%"
-      />
-      <Image
-        display={{ base: "block", sm: "none" }}
-        src={process.env.PUBLIC_URL + "images/social_needs_mobile.png"}
-        bgColor="#99C6E6"
-        pt="1em"
-        pb="2em"
-        px="0.5em"
-        w="100%"
-      />
-      <NumbersSection />
-      <Flex
-        display={{ base: "none", sm: "flex" }}
-        justifyContent="center"
-        bgColor="#FFFCF3"
-        w="100%"
-      >
-        <Image
-          src={process.env.PUBLIC_URL + "images/how.png"}
-          p="5em"
-          w="80%"
-        />
-      </Flex>
-      <Flex
-        display={{ base: "flex", sm: "none" }}
-        justifyContent="center"
-        bgColor="#FFFCF3"
-        w="100%"
-      >
-        <Image
-          src={process.env.PUBLIC_URL + "images/how_mobile.png"}
-          py="1.5em"
-          w="95%"
-        />
-      </Flex>
-      <VideoSection />
+      <ReCap />
       <JoinUsSection />
       <InfoSection />
     </VStack>
