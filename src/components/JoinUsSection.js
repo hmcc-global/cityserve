@@ -1,38 +1,70 @@
-import { Text, VStack, Link, Button } from "@chakra-ui/react";
+import { Text, VStack, Link, Button, Container, Box, Image, Center } from "@chakra-ui/react";
 
 const JoinUsSection = () => {
   return (
+    <Box 
+      position="relative" 
+      width="100%" 
+      height="50vh"
+      bgColor="#183B5D"
+    >
+    <Image
+      src={process.env.PUBLIC_URL + "images/join_us_bg.png"}
+      objectFit="cover"
+      objectPosition= "center bottom"
+      width="100%"
+      height="100%"
+      position="absolute"
+    />
     <VStack
-      bgColor="#85B4DB"
-      fontFamily="Gotham"
       textColor="#FFFFFF"
       w="100%"
       py="6"
-      gap={0}
+      gap={10}
+      position="absolute" 
+      top="50%" 
+      left="50%" 
+      transform="translate(-50%, -50%)" 
     >
-      <Text fontSize={{ base: "10vw", sm: "5vw" }}>APRIL 6, 2025</Text>
-      <Text fontSize={{ base: "5vw", sm: "4vw" }}>
-        JOIN US AT CITYSERVE 2025
-      </Text>
+      <VStack gap={2}>
+        <Text 
+          fontFamily="Antonio"
+          fontSize="2.25rem"
+          fontWeight="700"
+          textAlign="center"
+        >
+          JOIN US IN CITYSERVE 2025
+        </Text>
+        
+        <Text 
+          fontFamily="Manrope"
+          fontSize="1rem"
+          fontWeight="400"
+          textAlign="center"
+        >
+          If you would like to take part in CityServe 2025 or if you have any questions, <br></br>
+          indicate your interest in the form below or contact us here.
+        </Text>
+      </VStack>
+      
+
       <Button
-        bgColor="#FFFCF3"
+        bgColor="#DAEDFA"
         textColor="#183B5D"
-        fontFamily="Gotham"
+        fontFamily="Manrope"
         fontWeight="900"
-        w={{ base: "40%", sm: "35%" }}
-        h={{ base: "4em", sm: "2.6em" }}
-        mt={{ base: "2" }}
-        px={{ base: "4em", sm: "1em" }}
+        fontSize="1rem"
+        letterSpacing="0.12rem"
         textAlign="center"
-        borderRadius={50}
+        borderRadius="0.625rem"
         as={Link}
         target="_blank"
-        fontSize={{ base: "1.3vw", sm: "1.3vw" }}
         href="https://forms.gle/UoAwhzPYqgkUsdcf6"
       >
-        FILL OUT THIS FORM IF YOU ARE <br /> INTERESTED AND WANT TO KNOW MORE!{" "}
+        2025 INTEREST FORM
       </Button>
     </VStack>
+  </Box>
   );
 };
 
