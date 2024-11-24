@@ -10,7 +10,7 @@ const JoinUsSection = () => {
     >
     <Image
       src={process.env.PUBLIC_URL + "images/join_us_bg.png"}
-      objectFit="contain"
+      objectFit={{ base: "cover", xl: "contain" }}
       objectPosition= "center bottom"
       width="100%"
       height="100%"
@@ -25,10 +25,10 @@ const JoinUsSection = () => {
       left="50%" 
       transform="translate(-50%, -50%)" 
     >
-      <VStack gap={2}>
+      <VStack gap={2} marginX={{base:"3.5rem", xl:"42rem"}}>
         <Text 
           fontFamily="Antonio"
-          fontSize="2.25rem"
+          fontSize={{ base: "1.75rem", md: "2.25rem" }}
           fontWeight="700"
           textAlign="center"
         >
@@ -37,11 +37,11 @@ const JoinUsSection = () => {
         
         <Text 
           fontFamily="Manrope"
-          fontSize="1rem"
+          fontSize={{ base: "0.875rem", md: "1rem" }}
           fontWeight="400"
           textAlign="center"
         >
-          If you would like to take part in CityServe 2025 or if you have any questions, <br></br>
+          If you would like to take part in CityServe 2025 or if you have any questions,
           indicate your interest in the form below or contact us here.
         </Text>
       </VStack>
@@ -52,7 +52,7 @@ const JoinUsSection = () => {
         textColor="#183B5D"
         fontFamily="Manrope"
         fontWeight="900"
-        fontSize="1rem"
+        fontSize={{ base: "0.875rem", lg: "1rem" }}
         letterSpacing="0.12rem"
         textAlign="center"
         borderRadius="0.625rem"
