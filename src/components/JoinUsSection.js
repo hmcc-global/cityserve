@@ -10,7 +10,7 @@ const JoinUsSection = () => {
     >
     <Image
       src={process.env.PUBLIC_URL + "images/join_us_bg.png"}
-      objectFit="cover"
+      objectFit="contain"
       objectPosition= "center bottom"
       width="100%"
       height="100%"
@@ -19,7 +19,6 @@ const JoinUsSection = () => {
     <VStack
       textColor="#FFFFFF"
       w="100%"
-      py="6"
       gap={10}
       position="absolute" 
       top="50%" 
@@ -57,6 +56,8 @@ const JoinUsSection = () => {
         letterSpacing="0.12rem"
         textAlign="center"
         borderRadius="0.625rem"
+        height="3.125rem"
+        width="16.25rem"
         as={Link}
         target="_blank"
         href="https://forms.gle/UoAwhzPYqgkUsdcf6"
