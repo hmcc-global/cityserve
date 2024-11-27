@@ -1,4 +1,4 @@
-import { Text, VStack, Link, Button, Container, Box, Image, Center } from "@chakra-ui/react";
+import { Text, VStack, Link, Button, Box, Image } from "@chakra-ui/react";
 
 const JoinUsSection = () => {
   return (
@@ -42,7 +42,15 @@ const JoinUsSection = () => {
           textAlign="center"
         >
           If you would like to take part in CityServe 2025 or if you have any questions,
-          indicate your interest in the form below or contact us here.
+          indicate your interest in the form below or contact us &nbsp;
+          <Link 
+            href="https://linktr.ee/cityservehk" 
+            target="_blank"
+            variant="underline"
+            fontWeight="700"
+            textDecoration="underline"
+          >here
+          </Link>.
         </Text>
       </VStack>
       
