@@ -25,7 +25,7 @@ const JoinUsSection = () => {
       left="50%" 
       transform="translate(-50%, -50%)" 
     >
-      <VStack gap={2} marginX={{base:"3.5rem", xl:"42rem"}}>
+      <VStack gap={2} marginX={{base:"3.5rem", xl:"25rem"}}>
         <Text 
           fontFamily="Antonio"
           fontSize={{ base: "1.75rem", md: "2.25rem" }}
@@ -37,7 +37,7 @@ const JoinUsSection = () => {
         
         <Text 
           fontFamily="Manrope"
-          fontSize={{ base: "0.875rem", md: "1rem" }}
+          fontSize={{ base: "0.875rem", md: "1.25rem" }}
           fontWeight="400"
           textAlign="center"
         >
