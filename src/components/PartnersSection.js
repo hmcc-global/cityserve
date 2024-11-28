@@ -22,7 +22,7 @@ const PartnersSection = () => {
 				borderColor="#F8F8F8"
 				boxShadow="0px 0px 3px 0px rgba(0, 0, 0, 0.2)"
 				p="1.25rem"
-				maxW={{ base: '42.5vw', lg: '17.5vw', xl: '20vw' }}
+				w={{ base: '42.5vw', lg: '17.5vw', xl: '17.5vw' }}
 				h={'100%'}
 			>
 				<Image src={process.env.PUBLIC_URL + imagePath} h="6rem" mb={'1rem'} />
@@ -42,11 +42,10 @@ const PartnersSection = () => {
 	};
 
 	return (
-		<Box maxW="100vw" bgColor="#FFFFFF" p={0}>
 			<Container maxW="container.xl" py="4rem" px={0}>
 				<Box
 					py={0}
-					px={{ base: '1rem', lg: '0' }}
+					px={{ base: '1rem', md: '2rem', lg: '3rem', xl: 0 }}
 					maxW="100%"
 					fontFamily="Gotham"
 					display={'flex'}
@@ -108,7 +107,7 @@ const PartnersSection = () => {
 						)}
 					</Flex>
 					<Box display={{ base: 'flex', lg: 'none' }} w="100%" p={0}>
-						<Grid templateColumns="repeat(2, 1fr)" gap={'4vw'}>
+						<Grid templateColumns="repeat(2, 1fr)" gap={'6'}>
 							<GridItem>
 								{PartnerDisplayBox(
 									'images/partnered_logo_2.png',
@@ -149,7 +148,6 @@ const PartnersSection = () => {
 					</Box>
 				</Box>
 			</Container>
-		</Box>
 	);
 };
 
