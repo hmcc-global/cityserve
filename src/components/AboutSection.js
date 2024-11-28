@@ -12,7 +12,7 @@ import {
 const AboutSection = () => {
   return (
     <>
-      <VStack w="100%" gap="0" fontFamily="Antonio" letterSpacing="0.05em">
+      <VStack w="100%" gap="0" fontFamily="Antonio" letterSpacing="0.05rem">
         <Box
           backgroundImage={{
             base: `url(${
@@ -39,10 +39,10 @@ const AboutSection = () => {
               fontWeight="800"
               textColor="#183B5D"
             >
-              <Text fontSize="1.8em" marginBottom="5">
+              <Text fontSize="1.8rem" marginBottom="5">
                 APRIL 4-6, 2025
               </Text>
-              <Text fontSize="2.25em" marginBottom="10">
+              <Text fontSize="2.25rem" marginBottom="10">
                 TO BE A{" "}
                 <span style={{ color: "#1769B8" }}>VISIBLE DISPLAY</span> AND{" "}
                 <br />
@@ -59,7 +59,7 @@ const AboutSection = () => {
                   boxSize={4}
                   mr={2}
                 />
-                <Text textColor="#1769B8" letterSpacing="0.2em">
+                <Text textColor="#1769B8" letterSpacing="0.2rem">
                   LEARN HOW YOU CAN TAKE PART
                 </Text>
               </Link>
@@ -74,13 +74,13 @@ const AboutSection = () => {
         >
           <HStack w="100%" alignItems="flex-start" paddingTop="5vw">
             <Flex w="50%" h="100%">
-              <Text textColor="#99C6E6" paddingLeft="10vw" fontSize="2.25em">
+              <Text textColor="#99C6E6" paddingLeft="10vw" fontSize="2.25rem">
                 WHAT IS CITYSERVE?
               </Text>
             </Flex>
             <VStack
               fontFamily="Gotham-light"
-              fontSize="1.25em"
+              fontSize="1.25rem"
               gap={{ base: "2", sm: "7" }}
               w="58%"
               textColor="#DAEDFA"
