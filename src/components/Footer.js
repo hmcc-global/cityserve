@@ -22,7 +22,7 @@ const Footer = () => {
 					py={['0', '2em']}
 					alignItems={['flex-start', 'center']}
 				>
-					<HStack alignItems={'center'}>
+					<HStack alignItems={'center'} fontFamily={"'Manrope', sans-serif"} fontWeight={800}>
 						<Text>EN</Text>
 						<Text> | </Text>
 						<Text>繁</Text>
