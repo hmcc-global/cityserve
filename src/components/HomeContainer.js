@@ -1,9 +1,8 @@
-import { Image, VStack, Flex } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 import AboutSection from "./AboutSection";
 import ReCap from "./ReCap";
 import JoinUsSection from "./JoinUsSection";
-import InfoSection from "./InfoSection";
-import NumbersSection from "./NumbersSection";
+import PartnersSection from "./PartnersSection";
 
 const HomeContainer = () => {
   return (
@@ -11,7 +10,7 @@ const HomeContainer = () => {
       <AboutSection />
       <ReCap />
       <JoinUsSection />
-      <InfoSection />
+      <PartnersSection />
     </VStack>
   );
 };
