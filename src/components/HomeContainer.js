@@ -11,7 +11,7 @@ const HomeContainer = () => {
       <AboutSection />
       <ReCap />
       <JoinUsSection />
-      <InfoSection />
+      {/* <InfoSection /> */}
     </VStack>
   );
 };
