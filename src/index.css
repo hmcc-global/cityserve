@@ -25,13 +25,13 @@ code {
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: local("Manrope"), url("./font/Manrope-Regular.ttf") format("truetype");
+  font-family: "Antonio";
+  src: local("Antonio"), url("./font/Antonio-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Antonio";
-  src: local("Antonio"), url("./font/Antonio-Regular.ttf") format("truetype");
+  font-family: "Manrope";
+  src: local("Manrope"), url("./font/manrope.regular.otf") format("truetype");
   font-style: normal;
 }
