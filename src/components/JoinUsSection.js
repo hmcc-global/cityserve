@@ -1,38 +1,79 @@
-import { Text, VStack, Link, Button } from "@chakra-ui/react";
+import { Text, VStack, Link, Button, Box, Image } from "@chakra-ui/react";
 
 const JoinUsSection = () => {
   return (
+    <Box 
+      position="relative" 
+      width="100%" 
+      height="50vh"
+      bgColor="#183B5D"
+    >
+    <Image
+      src={process.env.PUBLIC_URL + "images/join_us_bg.png"}
+      objectFit={{ base: "cover", xl: "contain" }}
+      objectPosition= "center bottom"
+      width="100%"
+      height="100%"
+      position="absolute"
+    />
     <VStack
-      bgColor="#85B4DB"
-      fontFamily="Gotham"
       textColor="#FFFFFF"
       w="100%"
-      py="6"
-      gap={0}
+      gap={10}
+      position="absolute" 
+      top="50%" 
+      left="50%" 
+      transform="translate(-50%, -50%)" 
     >
-      <Text fontSize={{ base: "10vw", sm: "5vw" }}>APRIL 6, 2025</Text>
-      <Text fontSize={{ base: "5vw", sm: "4vw" }}>
-        JOIN US AT CITYSERVE 2025
-      </Text>
+      <VStack gap={2} marginX={{base:"3.5rem", xl:"25rem"}}>
+        <Text 
+          fontFamily="Antonio"
+          fontSize={{ base: "1.75rem", md: "2.25rem" }}
+          fontWeight="700"
+          textAlign="center"
+        >
+          JOIN US IN CITYSERVE 2025
+        </Text>
+        
+        <Text 
+          fontFamily="Manrope"
+          fontSize={{ base: "0.875rem", md: "1.25rem" }}
+          fontWeight="400"
+          textAlign="center"
+        >
+          If you would like to take part in CityServe 2025 or if you have any questions,
+          indicate your interest in the form below or contact us &nbsp;
+          <Link 
+            href="https://linktr.ee/cityservehk" 
+            target="_blank"
+            variant="underline"
+            fontWeight="700"
+            textDecoration="underline"
+          >here
+          </Link>.
+        </Text>
+      </VStack>
+      
+
       <Button
-        bgColor="#FFFCF3"
+        bgColor="#DAEDFA"
         textColor="#183B5D"
-        fontFamily="Gotham"
+        fontFamily="Manrope"
         fontWeight="900"
-        w={{ base: "40%", sm: "35%" }}
-        h={{ base: "4em", sm: "2.6em" }}
-        mt={{ base: "2" }}
-        px={{ base: "4em", sm: "1em" }}
+        fontSize={{ base: "0.875rem", lg: "1rem" }}
+        letterSpacing="0.12rem"
         textAlign="center"
-        borderRadius={50}
+        borderRadius="0.625rem"
+        height="3.125rem"
+        width="16.25rem"
         as={Link}
         target="_blank"
-        fontSize={{ base: "1.3vw", sm: "1.3vw" }}
         href="https://forms.gle/UoAwhzPYqgkUsdcf6"
       >
-        FILL OUT THIS FORM IF YOU ARE <br /> INTERESTED AND WANT TO KNOW MORE!{" "}
+        2025 INTEREST FORM
       </Button>
     </VStack>
+  </Box>
   );
 };
 
