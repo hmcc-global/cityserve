@@ -4,109 +4,105 @@ import {
   Image,
   Text,
   Box,
-  Container,
   HStack,
+  Link,
+  Img,
 } from "@chakra-ui/react";
 
 const AboutSection = () => {
   return (
-    <VStack w="100%" gap="0">
-      <Container
-        backgroundImage={process.env.PUBLIC_URL + "images/cityserve_bg.png"}
-        backgroundPosition="center"
-        backgroundSize="cover"
-        minW="100%"
-      >
-        <Flex
-          alignItems="center"
-          flexDirection="column"
-          background="radial-gradient(30% 55% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.00) 100%);"
-          borderRadius="100%"
+    <>
+      <VStack w="100%" gap="0" fontFamily="Antonio" letterSpacing="0.05em">
+        <Box
+          backgroundImage={{
+            base: `url(${
+              process.env.PUBLIC_URL + "/images/cityserve_bg_base.jpg"
+            })`,
+            md: `url(${process.env.PUBLIC_URL + "/images/cityserve_bg.jpg"})`,
+          }}
+          backgroundPosition="center"
+          backgroundSize="cover"
+          minW="100%"
         >
-          <Image
-            src={process.env.PUBLIC_URL + "images/cityserve_logo.png"}
-            w={{ base: "80%", sm: "70%" }}
-          />
-          <Box
-            textAlign="center"
-            background="radial-gradient(50% 50% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.00) 100%)"
-            pb="14"
-          >
-            <Text
-              fontFamily="Gotham"
-              textShadow="0px 3.428px 46.274px rgba(255, 255, 255, 0.55);"
-              fontSize={{ base: "5vw", sm: "4.5vw" }}
-              fontWeight={{ base: "900" }}
-            >
-              MARCH 17, 2024
-            </Text>
-            <Text
-              display={{ base: "none", sm: "block" }}
-              fontFamily="Gotham-light"
-              fontWeight="500"
-              fontSize="2vw"
-              background="radial-gradient(50% 50% at 50% 50%, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)"
-            >
-              <b>Visible display</b> and <b>viable demonstration</b> of God’s
-              love for the city
-            </Text>
-            <Text
-              display={{ base: "block", sm: "none" }}
-              fontFamily="Gotham"
-              fontSize="3vw"
-              background="radial-gradient(50% 50% at 50% 50%, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)"
-            >
-              <b>Visible display</b> and <b>viable demonstration</b> <br />
-              of God’s love for the city
-            </Text>
-          </Box>
-        </Flex>
-      </Container>
-      <VStack bgColor="#FFFCF3" pt="2" pb={{ base: "5", sm: "10" }}>
-        <HStack w="100%">
-          <Image
-            src={process.env.PUBLIC_URL + "images/cityserve_logo_small.png"}
-            w={{ base: "30%", sm: "23%" }}
-            my={{ base: "8", sm: "12" }}
-            ml={{ base: "6", sm: "12" }}
-            mr={{ base: "2", sm: "4" }}
-          />
-          <VStack
-            fontFamily="Gotham-light"
-            fontSize={{ base: "2.6vw", sm: "1.6vw" }}
-            gap={{ base: "2", sm: "7" }}
-            w="58%"
-          >
+          <HStack w="100%" h="90vh">
+            <Flex justifyContent="center" w="50%">
+              <Image
+                w="100%"
+                h="auto"
+                src={process.env.PUBLIC_URL + "images/cityserve_logo.png"}
+              />
+            </Flex>
             <Box
-              bgColor="#EFDDCB"
+              w="50%"
+              paddingLeft="5vw"
+              paddingY="auto"
+              fontWeight="800"
               textColor="#183B5D"
-              fontFamily="Gotham"
-              fontWeight="900"
-              px={{ base: "3", sm: "5" }}
-              alignSelf="start"
             >
-              WHAT IS CITYSERVE?
+              <Text fontSize="1.8em" marginBottom="5">
+                APRIL 4-6, 2025
+              </Text>
+              <Text fontSize="2.25em" marginBottom="10">
+                TO BE A{" "}
+                <span style={{ color: "#1769B8" }}>VISIBLE DISPLAY</span> AND{" "}
+                <br />
+                <span style={{ color: "#1769B8" }}>
+                  {" "}
+                  VIABLE DEMONSTRATION OF
+                </span>{" "}
+                <br />
+                GOD'S LOVE FOR THE CITY
+              </Text>
+              <Link display="flex" alignItems="center">
+                <Img
+                  src={process.env.PUBLIC_URL + "images/trianglevec.svg"}
+                  boxSize={4}
+                  mr={2}
+                />
+                <Text textColor="#1769B8" letterSpacing="0.2em">
+                  LEARN HOW YOU CAN TAKE PART
+                </Text>
+              </Link>
             </Box>
-            <Text>
-              CityServe is a city-wide movement to partner with local churches
-              and organizations to serve others and demonstrate God’s love for
-              the city.
-            </Text>
-            <Text>
-              CityServe Hong Kong was initiated by Harvest Mission Community
-              Church with a desire to see churches and organizations coming
-              together on a Sunday, to go beyond the four walls of the church.
-              We want to be God’s witness by loving and serving the poor,
-              marginalised, and unreached people of Hong Kong.
-            </Text>
-          </VStack>
-        </HStack>
-        <Image
-          src={process.env.PUBLIC_URL + "images/cityserve_org.png"}
-          w={{ base: "90%", sm: "70%" }}
-        />
+          </HStack>
+        </Box>
+        <VStack
+          bgColor="#183B5D"
+          pt="2"
+          pb={{ base: "5", sm: "10" }}
+          paddingTop="4vw"
+        >
+          <HStack w="100%" alignItems="flex-start" paddingTop="5vw">
+            <Flex w="50%" h="100%">
+              <Text textColor="#99C6E6" paddingLeft="10vw" fontSize="2.25em">
+                WHAT IS CITYSERVE?
+              </Text>
+            </Flex>
+            <VStack
+              fontFamily="Gotham-light"
+              fontSize="1.25em"
+              gap={{ base: "2", sm: "7" }}
+              w="58%"
+              textColor="#DAEDFA"
+              paddingLeft="5vw"
+            >
+              <Text>
+                CityServe is a city-wide movement to partner with local churches
+                and organizations to serve others and demonstrate God’s love for
+                the city.
+              </Text>
+              <Text>
+                CityServe Hong Kong was initiated to see churches and
+                organizations coming together on a Sunday, to go beyond the four
+                walls of the church. We want to be God’s witness by loving and
+                serving the poor, marginalised, and unreached people of Hong
+                Kong.
+              </Text>
+            </VStack>
+          </HStack>
+        </VStack>
       </VStack>
-    </VStack>
+    </>
   );
 };
 
