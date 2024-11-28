@@ -65,6 +65,7 @@ const PartnersSection = () => {
 							fontWeight={800}
 							fontSize="2.25rem"
 							textTransform={'uppercase'}
+							fontFamily="'Antonio', sans-serif"
 						>
 							Our Partners
 						</Text>
