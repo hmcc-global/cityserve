@@ -63,7 +63,7 @@ const AboutSection = () => {
               </Text>
               <Link display="flex" alignItems="center">
                 <Img
-                  src={process.env.PUBLIC_URL + "images/trianglevec.svg"}
+                  src={process.env.PUBLIC_URL + "images/trianglevec_blue.svg"}
                   boxSize={4}
                   mr={2}
                 />

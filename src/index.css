@@ -13,18 +13,6 @@ code {
 }
 
 @font-face {
-  font-family: "Gotham";
-  src: local("Gotham"), url("./font/Gotham.otf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Gotham-light";
-  src: local("Gotham"), url("./font/Gotham\ Light.otf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Antonio";
   src: local("Antonio"), url("./font/Antonio-Regular.ttf") format("truetype");
   font-style: normal;
@@ -32,6 +20,6 @@ code {
 
 @font-face {
   font-family: "Manrope";
-  src: local("Manrope"), url("./font/manrope.regular.otf") format("truetype");
+  src: local("Manrope"), url("./font/Manrope-Regular.ttf") format("truetype");
   font-style: normal;
 }

@@ -74,7 +74,12 @@ const ParticipateSection = () => {
   };
 
   return (
-    <Container maxW="container.xl" px={0} py="5rem">
+    <Container
+      maxW="container.xl"
+      px={0}
+      pt="5rem"
+      pb={{ base: "0", md: "5rem" }}
+    >
       <Box
         display="flex"
         flexDirection={{ base: "column", lg: "row" }}
