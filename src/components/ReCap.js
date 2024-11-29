@@ -1,8 +1,10 @@
+import React, { forwardRef } from "react";
+
 import { Box, VStack, AspectRatio } from "@chakra-ui/react";
 
-const ReCap = () => {
+const ReCap = forwardRef((props, ref) => {
   return (
-    <VStack w="100%" bgColor="#183B5D" gap="5" py="10">
+    <VStack w="100%" bgColor="#183B5D" gap="5" py="10" ref={ref}>
       <Box
         bgColor="#EFDDCB"
         fontFamily="Gotham"
@@ -23,6 +25,6 @@ const ReCap = () => {
       </AspectRatio>
     </VStack>
   );
-};
+});
 
 export default ReCap;
