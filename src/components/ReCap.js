@@ -5,9 +5,7 @@ import {
   VStack,
   AspectRatio,
   Stack,
-  HStack,
   SimpleGrid,
-  Image,
   Box,
   Center,
 } from "@chakra-ui/react";

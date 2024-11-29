@@ -3,7 +3,6 @@ import {
   Image,
   Container,
   Box,
-  Flex,
   Tabs,
   TabList,
   Tab,
