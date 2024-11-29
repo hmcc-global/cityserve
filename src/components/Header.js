@@ -1,11 +1,23 @@
 import { HStack, Text, Link, Button, Img, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-const Header = () => {
+const Header = ({ recapRef, participateRef }) => {
   const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scrollToRecap = () => {
+    if (recapRef.current) {
+      recapRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToParticipate = () => {
+    if (participateRef.current) {
+      participateRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -34,10 +46,10 @@ const Header = () => {
           gap="2.5rem"
           display={{ base: "none", md: "flex" }}
         >
-          <Link>
+          <Link onClick={scrollToRecap}>
             <Text fontSize="1rem">2024 RECAP</Text>
           </Link>
-          <Link>
+          <Link onClick={scrollToParticipate}>
             <Text fontSize="1rem" S>
               PARTICIPATE
             </Text>
@@ -83,10 +95,10 @@ const Header = () => {
         fontWeight="800"
         display={isOpen ? "flex" : "none"}
       >
-        <Link>
+        <Link onClick={scrollToRecap}>
           <Text fontSize="0.7rem">2024 RECAP</Text>
         </Link>
-        <Link>
+        <Link onClick={scrollToParticipate}>
           <Text fontSize="0.7rem">PARTICIPATE</Text>
         </Link>
         <Button

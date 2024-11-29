@@ -5,13 +5,13 @@ import JoinUsSection from "./JoinUsSection";
 import ParticipateSection from "./ParticipateSection";
 import PartnersSection from "./PartnersSection";
 
-const HomeContainer = () => {
+const HomeContainer = ({ recapRef, participateRef }) => {
   return (
     <VStack gap={0}>
       <AboutSection />
-      <ReCap />
+      <ReCap ref={recapRef} />
       <ParticipateSection />
-      <JoinUsSection />
+      <JoinUsSection ref={participateRef} />
       <PartnersSection />
     </VStack>
   );
