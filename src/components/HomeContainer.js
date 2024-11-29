@@ -2,8 +2,8 @@ import { VStack } from "@chakra-ui/react";
 import AboutSection from "./AboutSection";
 import ReCap from "./ReCap";
 import JoinUsSection from "./JoinUsSection";
-import InfoSection from "./InfoSection";
 import ParticipateSection from "./ParticipateSection";
+import PartnersSection from "./PartnersSection";
 
 const HomeContainer = () => {
   return (
