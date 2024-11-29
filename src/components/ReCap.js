@@ -46,6 +46,7 @@ const ReCap = forwardRef((props, ref) => {
       py={{ base: "2.5rem" }}
       px={{ base: "1.313rem" }}
       textColor="#183B5D"
+      ref={ref}
     >
       <Text
         fontFamily="Antonio"
