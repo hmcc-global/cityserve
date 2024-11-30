@@ -74,6 +74,14 @@ const JoinUsSection = forwardRef((props, ref) => {
           as={Link}
           target="_blank"
           href="https://forms.gle/UoAwhzPYqgkUsdcf6"
+          sx={{
+            _hover: {
+              textDecoration: 'none',
+              bg: '#1769B8', // Background color on hover
+              color: 'white',  // Text color on hover
+            },
+          }}
+          
         >
           2025 INTEREST FORM
         </Button>
