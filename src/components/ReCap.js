@@ -45,12 +45,12 @@ const ReCap = forwardRef((props, ref) => {
       px={{ base: "1.313rem" }}
       textColor="#183B5D"
       ref={ref}
+      align={{ base: "start", lg: "center" }}
     >
       <Text
         fontFamily="Antonio"
         fontWeight="700"
         fontSize={{ base: "1.75rem", lg: "2.25rem" }}
-        textAlign="left"
       >
         A RECAP OF CITYSERVE 2024
       </Text>
@@ -72,18 +72,16 @@ const ReCap = forwardRef((props, ref) => {
         direction={["column", "row"]}
         w="100%"
         marginTop={{ base: "1.313rem", sm: "0rem", lg: "2.5rem" }}
+        alignItems="center"
+        justifyContent={"center"}
       >
         <Center>
-          <AspectRatio
-            width={{ base: "24rem", lg: "42rem" }}
-            ratio={16 / 9}
-            marginLeft={{ lg: "13rem" }}
-          >
+          <AspectRatio width={{ base: "24rem", lg: "50vw" }} ratio={16 / 9}>
             <iframe
               title="video-embed"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              src="https://www.youtube.com/embed/wj7FnRB-0zk?si=5_1uy1aXIN_WIhMH"
+              src="https://www.youtube.com/embed/s7SGGr8nmW0?si=Il1GPoDczMYix-SP"
             />
           </AspectRatio>
         </Center>
