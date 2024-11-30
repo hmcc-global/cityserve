@@ -72,12 +72,13 @@ const ReCap = forwardRef((props, ref) => {
         direction={["column", "row"]}
         w="100%"
         marginTop={{ base: "1.313rem", sm: "0rem", lg: "2.5rem" }}
+        alignItems="center"
+        justifyContent={"center"}
       >
         <Center>
           <AspectRatio
             width={{ base: "24rem", lg: "42rem" }}
             ratio={16 / 9}
-            marginLeft={{ lg: "13rem" }}
           >
             <iframe
               title="video-embed"
