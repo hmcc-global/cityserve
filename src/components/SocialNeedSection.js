@@ -1,13 +1,4 @@
-import {
-  Text,
-  VStack,
-  Image,
-  Container,
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Text, Image, Container, Box, Grid, GridItem } from "@chakra-ui/react";
 
 const SocialNeedSection = () => {
   const SocialNeedsDisplay = (imagePath, title, color) => {
