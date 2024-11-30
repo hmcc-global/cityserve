@@ -1,7 +1,7 @@
 import { HStack, Text, Link, Button, Img, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-const Header = ({ recapRef, participateRef }) => {
+const Header = ({ recapRef, joinusRef }) => {
   const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
 
   const toggleDropdown = () => {
@@ -15,8 +15,8 @@ const Header = ({ recapRef, participateRef }) => {
   };
 
   const scrollToParticipate = () => {
-    if (participateRef.current) {
-      participateRef.current.scrollIntoView({ behavior: "smooth" });
+    if (joinusRef.current) {
+      joinusRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
