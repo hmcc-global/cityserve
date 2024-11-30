@@ -10,10 +10,16 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-const AboutSection = ({ recapRef }) => {
+const AboutSection = ({ recapRef, participateRef }) => {
   const scrollToRecap = () => {
     if (recapRef.current) {
       recapRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToParticipate = () => {
+    if (participateRef.current) {
+      participateRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -86,6 +92,7 @@ const AboutSection = ({ recapRef }) => {
                     _hover={{
                       textDecor: "none",
                     }}
+                    onClick={scrollToParticipate}
                   >
                     <Text textColor="#1769B8" letterSpacing="0.2rem">
                       LEARN HOW YOU CAN TAKE PART
@@ -165,6 +172,7 @@ const AboutSection = ({ recapRef }) => {
                     _hover={{
                       textDecor: "none",
                     }}
+                    onClick={scrollToParticipate}
                   >
                     <Text textColor="#1769B8" letterSpacing="0.2rem">
                       LEARN HOW YOU CAN TAKE PART

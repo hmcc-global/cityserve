@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 const SocialNeedSection = () => {
-  const PartnerDisplayBox = (imagePath, title, color) => {
+  const SocialNeedsDisplay = (imagePath, title, color) => {
     return (
       <Box
         display="flex"
@@ -50,13 +50,13 @@ const SocialNeedSection = () => {
     <Container maxW="container.xl" py="4rem" px={0}>
       <Box
         py={0}
-        px={{ base: "1rem", md: "2rem", lg: "3rem", xl: 0 }}
+        px={{ base: "1.5rem", md: "2rem", lg: "3rem", xl: 0 }}
         maxW="100%"
         display={"flex"}
         flexDirection="column"
         alignItems="center"
         justifyContent="space-between"
-        gap={{ base: "2rem", lg: "2rem" }}
+        gap={{ base: "1.1rem", lg: "2rem" }}
       >
         <Text
           fontWeight={800}
@@ -64,7 +64,7 @@ const SocialNeedSection = () => {
           textTransform={"uppercase"}
           fontFamily="'Antonio', sans-serif"
           textColor="#183B5D"
-          alignSelf="start"
+          alignSelf={{ base: "start", lg: "center" }}
         >
           serving the social needs of HK
         </Text>
@@ -88,70 +88,70 @@ const SocialNeedSection = () => {
             gap={"4"}
           >
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_children.png",
                 "CHILDREN",
                 "#DAEDFA"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_helpers.png",
                 "DOMESTIC HELPERS",
                 "#F9EEE3"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_issues.png",
                 "DOMESTIC ISSUES",
                 "#DAEDFA"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_elder.png",
                 "ELDERLY",
                 "#F9EEE3"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_ethnic.png",
                 "ETHNIC MINORITIES",
                 "#DAEDFA"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_disabled.png",
                 "HANDICAPPED & DISABLED",
                 "#F9EEE3"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_environment.png",
                 "ENVIRONMENTAL",
                 "#DAEDFA"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_poor.png",
                 "POOR & HOMELESS",
                 "#F9EEE3"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_mental.png",
                 "MENTAL HEALTH",
                 "#DAEDFA"
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
+              {SocialNeedsDisplay(
                 "images/social_needs/need_income.png",
                 "LOW INCOME FAMILIES",
                 "#F9EEE3"
