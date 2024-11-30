@@ -84,7 +84,7 @@ const ReCap = forwardRef((props, ref) => {
               title="video-embed"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              src="https://www.youtube.com/embed/wj7FnRB-0zk?si=5_1uy1aXIN_WIhMH"
+              src="https://www.youtube.com/embed/s7SGGr8nmW0?si=Il1GPoDczMYix-SP"
             />
           </AspectRatio>
         </Center>
