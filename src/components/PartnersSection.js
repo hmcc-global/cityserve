@@ -23,7 +23,7 @@ const PartnersSection = () => {
 				boxShadow="0px 0px 3px 0px rgba(0, 0, 0, 0.2)"
 				p="1.25rem"
 				w={{ base: '42.5vw', lg: '17.5vw', xl: '17.5vw' }}
-				h={'100%'}
+				minH={'100%'}
 			>
 				<Image src={process.env.PUBLIC_URL + imagePath} h="6rem" mb={'1rem'} />
 				<Text
@@ -74,8 +74,7 @@ const PartnersSection = () => {
 						fontSize={{ base: '0.875rem', md: '1.25rem' }}
 						fontFamily="'Manrope', sans-serif"
 					>
-						Organizations and churches we have partnership with. Click on each
-						card to learn more about them!
+						Organizations and ministries partnered with us during <strong>CityServe 2024</strong>.
 					</Text>
 				</VStack>
 				<Flex

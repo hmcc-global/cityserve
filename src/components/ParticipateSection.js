@@ -22,10 +22,11 @@ const ParticipateSection = () => {
 				p="1rem"
 				w={{ base: '100%', lg: '32%' }}
 				gap="0.75rem"
+				minH="100%"
 			>
 				<Image
 					src={process.env.PUBLIC_URL + 'images/participate/' + iconPath}
-					h="6rem"
+					minH="6rem"
 					mb={'1rem'}
 				/>
 
@@ -161,15 +162,15 @@ const ParticipateSection = () => {
 									textTransform={'uppercase'}
 									fontSize={{ base: '0.875rem', md: '1rem' }}
 									fontFamily={'Manrope, sans-serif'}
-									fontWeight={800}
+									fontWeight="800"
 									textAlign={'center'}
 								>
-									IF YOU’RE A CHURCH, PICK 1 OF 3 CITYSERVE MODES:
+									you may choose from the below 3 CITYSERVE MODEs to join in the movement:
 								</Text>
 								<Box
 									display={'flex'}
 									flexDir={{ base: 'column', lg: 'row' }}
-									alignItems={{ base: 'flex-start', lg: 'center' }}
+									alignItems={{ base: 'flex-start', lg: 'flex-start' }}
 									justifyContent={'center'}
 									mt={'1.25rem'}
 									gap={'1.5rem'}
@@ -178,8 +179,8 @@ const ParticipateSection = () => {
 										'participant.svg',
 										'Participant',
 										'',
-										'Participate with your small group or ministry in a preplanned event, to serve one of 10 social categories.',
-										'Size of organization:  Less than 50 people'
+										'Invite your members or small groups to join in a pre-planned event organized by CityServe Planning Committee. These members will be joined by participants from other churches to serve one of 10 social categories.',
+										'Size of organization: Less than 50 people'
 									)}
 									<Divider
 										orientation="vertical"
@@ -192,8 +193,8 @@ const ParticipateSection = () => {
 										'partner.svg',
 										'partner',
 										'',
-										'Partner with your church through sharing connections and resources to empower your congregation to serve during CityServe.',
-										'Size of Organization:  More than 50 people'
+										'CityServe Planning Committee will partner with your church to plan an event for your congregation. Connections and resources will be shared to empower your congregation for a serving experience during CityServe.',
+										'Size of Organization: More than 50 people'
 									)}
 									<Divider
 										orientation="vertical"
