@@ -76,6 +76,7 @@ const JoinUsSection = forwardRef((props, ref) => {
           href="https://forms.gle/UoAwhzPYqgkUsdcf6"
           sx={{
             _hover: {
+              textDecoration: 'none',
               bg: '#1769B8', // Background color on hover
               color: 'white',  // Text color on hover
             },
