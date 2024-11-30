@@ -21,7 +21,7 @@ const Header = ({ recapRef, participateRef }) => {
   };
 
   return (
-    <VStack gap="0.4" background="black">
+    <VStack gap="0.4" background="black" w="100vw">
       <HStack
         w="100%"
         h="9vh"
@@ -61,6 +61,7 @@ const Header = ({ recapRef, participateRef }) => {
             fontWeight="800"
             href="https://forms.gle/UoAwhzPYqgkUsdcf6"
             as={Link}
+            _hover={{ bg: "#183B5D", textDecor: "none" }}
             target="_blank"
             borderRadius="0.6rem"
           >

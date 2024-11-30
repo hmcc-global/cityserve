@@ -8,7 +8,7 @@ import PartnersSection from "./PartnersSection";
 const HomeContainer = ({ recapRef, participateRef }) => {
   return (
     <VStack gap={0}>
-      <AboutSection />
+      <AboutSection recapRef={recapRef} />
       <ReCap ref={recapRef} />
       <ParticipateSection />
       <JoinUsSection ref={participateRef} />
