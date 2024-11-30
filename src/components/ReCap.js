@@ -45,12 +45,12 @@ const ReCap = forwardRef((props, ref) => {
       px={{ base: "1.313rem" }}
       textColor="#183B5D"
       ref={ref}
+      align={{ base: "start", lg: "center" }}
     >
       <Text
         fontFamily="Antonio"
         fontWeight="700"
         fontSize={{ base: "1.75rem", lg: "2.25rem" }}
-        textAlign="left"
       >
         A RECAP OF CITYSERVE 2024
       </Text>
