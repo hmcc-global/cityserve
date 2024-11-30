@@ -76,10 +76,7 @@ const ReCap = forwardRef((props, ref) => {
         justifyContent={"center"}
       >
         <Center>
-          <AspectRatio
-            width={{ base: "24rem", lg: "42rem" }}
-            ratio={16 / 9}
-          >
+          <AspectRatio width={{ base: "24rem", lg: "50vw" }} ratio={16 / 9}>
             <iframe
               title="video-embed"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
