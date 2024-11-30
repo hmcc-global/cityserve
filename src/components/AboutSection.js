@@ -10,7 +10,19 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-const AboutSection = () => {
+const AboutSection = ({ recapRef, participateRef }) => {
+  const scrollToRecap = () => {
+    if (recapRef.current) {
+      recapRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToParticipate = () => {
+    if (participateRef.current) {
+      participateRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <VStack w="100%" gap="0" bgColor="#183B5D">
@@ -61,16 +73,33 @@ const AboutSection = () => {
                 <br />
                 GOD'S LOVE FOR THE CITY
               </Text>
-              <Link display="flex" alignItems="center">
+              <HStack>
                 <Img
                   src={process.env.PUBLIC_URL + "images/trianglevec_blue.svg"}
                   boxSize={4}
-                  mr={2}
                 />
-                <Text textColor="#1769B8" letterSpacing="0.2rem">
-                  LEARN HOW YOU CAN TAKE PART
-                </Text>
-              </Link>
+                <Box
+                  borderBottomWidth="0"
+                  w="fit-content"
+                  _hover={{
+                    borderBottomWidth: "0.15rem",
+                    borderBottomColor: "#1769B8",
+                  }}
+                >
+                  <Link
+                    display="flex"
+                    alignItems="center"
+                    _hover={{
+                      textDecor: "none",
+                    }}
+                    onClick={scrollToParticipate}
+                  >
+                    <Text textColor="#1769B8" letterSpacing="0.2rem">
+                      LEARN HOW YOU CAN TAKE PART
+                    </Text>
+                  </Link>
+                </Box>
+              </HStack>
             </Box>
           </HStack>
 
@@ -117,22 +146,40 @@ const AboutSection = () => {
                 href="https://forms.gle/UoAwhzPYqgkUsdcf6"
                 as={Link}
                 target="_blank"
+                _hover={{ bg: "#183B5D", textDecor: "none" }}
                 fontFamily="Manrope"
                 w="70%"
                 borderRadius="0.6rem"
               >
                 2025 INTEREST FORM
               </Button>
-              <Link display="flex" alignItems="center">
+              <HStack>
                 <Img
                   src={process.env.PUBLIC_URL + "images/trianglevec_blue.svg"}
                   boxSize={4}
-                  mr={2}
                 />
-                <Text textColor="#1769B8" letterSpacing="0.2rem">
-                  LEARN HOW YOU CAN TAKE PART
-                </Text>
-              </Link>
+                <Box
+                  borderBottomWidth="0"
+                  w="fit-content"
+                  _hover={{
+                    borderBottomWidth: "0.15rem",
+                    borderBottomColor: "#1769B8",
+                  }}
+                >
+                  <Link
+                    display="flex"
+                    alignItems="center"
+                    _hover={{
+                      textDecor: "none",
+                    }}
+                    onClick={scrollToParticipate}
+                  >
+                    <Text textColor="#1769B8" letterSpacing="0.2rem">
+                      LEARN HOW YOU CAN TAKE PART
+                    </Text>
+                  </Link>
+                </Box>
+              </HStack>
             </VStack>
           </VStack>
         </Box>
@@ -182,17 +229,32 @@ const AboutSection = () => {
                 serving the poor, marginalised, and unreached people of Hong
                 Kong.
               </Text>
-              <Link w="100%" display="flex">
+              <HStack w="100%">
                 <Img
                   src={process.env.PUBLIC_URL + "images/trianglevec_skin.svg"}
                   boxSize={4}
-                  mr={2}
                   my="auto"
                 />
-                <Text textColor="#E0CEBB" fontWeight="700">
-                  CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
-                </Text>
-              </Link>
+                <Box
+                  borderBottomWidth="0"
+                  w="fit-content"
+                  _hover={{
+                    borderBottomWidth: "0.15rem",
+                    borderBottomColor: "#E0CEBB",
+                  }}
+                >
+                  <Link
+                    w="100%"
+                    display="flex"
+                    _hover={{ textDecor: "none" }}
+                    onClick={scrollToRecap}
+                  >
+                    <Text textColor="#E0CEBB" fontWeight="700">
+                      CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
+                    </Text>
+                  </Link>
+                </Box>
+              </HStack>
             </VStack>
           </HStack>
 
@@ -243,7 +305,11 @@ const AboutSection = () => {
                   mr={2}
                   my="auto"
                 />
-                <Text textColor="#E0CEBB" fontWeight="700">
+                <Text
+                  textColor="#E0CEBB"
+                  fontWeight="700"
+                  onClick={scrollToRecap}
+                >
                   CHECK OUT WHAT HAPPENED <br /> IN CITYSERVE 2024
                 </Text>
               </Link>

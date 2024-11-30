@@ -1,7 +1,7 @@
 import { HStack, Text, Link, Button, Img, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-const Header = ({ recapRef, participateRef }) => {
+const Header = ({ recapRef, joinusRef }) => {
   const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
 
   const toggleDropdown = () => {
@@ -15,8 +15,8 @@ const Header = ({ recapRef, participateRef }) => {
   };
 
   const scrollToParticipate = () => {
-    if (participateRef.current) {
-      participateRef.current.scrollIntoView({ behavior: "smooth" });
+    if (joinusRef.current) {
+      joinusRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -26,7 +26,7 @@ const Header = ({ recapRef, participateRef }) => {
         w="100%"
         h="9vh"
         bgColor="#F8F8F8"
-        paddingX={{ base: "5vw", md: "5vw", lg: "8.5vw" }}
+        paddingX={{ base: "5vw", md: "5vw", lg: "5vw", xl: "5vw" }}
         justifyContent="space-between"
         fontFamily="Manrope"
         letterSpacing="0.12em"
@@ -42,9 +42,10 @@ const Header = ({ recapRef, participateRef }) => {
 
         {/* Desktop version */}
         <HStack
-          w={{ md: "70%", lg: "50%" }}
+          w={{ md: "70%", lg: "60%" }}
           gap="2.5rem"
-          display={{ base: "none", md: "flex" }}
+          display={{ base: "none", lg: "flex" }}
+          justifyContent="end"
         >
           <Link onClick={scrollToRecap}>
             <Text fontSize="1rem">2024 RECAP</Text>
@@ -61,27 +62,52 @@ const Header = ({ recapRef, participateRef }) => {
             fontWeight="800"
             href="https://forms.gle/UoAwhzPYqgkUsdcf6"
             as={Link}
+            _hover={{ bg: "#183B5D", textDecor: "none" }}
             target="_blank"
             borderRadius="0.6rem"
           >
             2025 INTEREST FORM
           </Button>
+          <HStack
+            alignItems={"center"}
+            fontFamily={"'Manrope', sans-serif"}
+            fontWeight={800}
+          >
+            <Text>EN</Text>
+            <Text> | </Text>
+            <Text>繁</Text>
+          </HStack>
         </HStack>
 
         {/* Mobile version */}
-        <Button
-          backgroundColor="transparent"
-          onClick={toggleDropdown}
-          variant="unstyled"
-          display={{ base: "block", md: "none" }}
+        <HStack
+          display={{ base: "flex", lg: "none" }}
+          w="25%"
+          justifyContent="end"
         >
-          <Img
-            src={process.env.PUBLIC_URL + "images/three_dots.svg"}
-            boxSize={7}
-            mr={2}
-            my="auto"
-          />
-        </Button>
+          <Button
+            backgroundColor="transparent"
+            onClick={toggleDropdown}
+            variant="unstyled"
+          >
+            <Img
+              src={process.env.PUBLIC_URL + "images/three_dots.svg"}
+              boxSize={7}
+              mr={2}
+              my="auto"
+            />
+          </Button>
+          <HStack
+            alignItems={"center"}
+            fontFamily={"'Manrope', sans-serif"}
+            fontWeight={800}
+            display={{ base: "flex", lg: "none" }}
+          >
+            <Text>EN</Text>
+            <Text> | </Text>
+            <Text>繁</Text>
+          </HStack>
+        </HStack>
       </HStack>
 
       <HStack
