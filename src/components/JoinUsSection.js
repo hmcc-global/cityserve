@@ -8,7 +8,7 @@ const JoinUsSection = forwardRef((props, ref) => {
       ref={ref}
       position="relative"
       width="100%"
-      height={{ base: "60vh", md: "55vh", lg: '40vh' }}
+      height={{ base: "60vh", md: "55vh", lg: "48vh" }}
       bgColor="#183B5D"
     >
       <Image
@@ -28,7 +28,7 @@ const JoinUsSection = forwardRef((props, ref) => {
         left="50%"
         transform="translate(-50%, -50%)"
       >
-        <VStack gap={'2rem'} marginX={{ base: "3.5rem", xl: "22.5rem" }}>
+        <VStack gap={"2rem"} marginX={{ base: "3.5rem", xl: "22.5rem" }}>
           <Text
             fontFamily="Antonio"
             fontSize={{ base: "1.75rem", md: "2.25rem" }}
@@ -76,12 +76,11 @@ const JoinUsSection = forwardRef((props, ref) => {
           href="https://forms.gle/UoAwhzPYqgkUsdcf6"
           sx={{
             _hover: {
-              textDecoration: 'none',
-              bg: '#1769B8', // Background color on hover
-              color: 'white',  // Text color on hover
+              textDecoration: "none",
+              bg: "#1769B8", // Background color on hover
+              color: "white", // Text color on hover
             },
           }}
-          
         >
           2025 INTEREST FORM
         </Button>
