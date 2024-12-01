@@ -146,7 +146,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							<Button
 								bgColor="#1769B8"
 								textColor="#F8F8F8"
-								fontSize="0.8rem"
+								fontSize="0.875rem"
 								fontWeight="800"
 								href="https://forms.gle/UoAwhzPYqgkUsdcf6"
 								as={Link}
@@ -180,6 +180,9 @@ const AboutSection = ({ recapRef, participateRef }) => {
 											textDecor: 'none',
 										}}
 										onClick={scrollToParticipate}
+                    fontFamily={"'Manrope', sans-serif"}
+                    fontWeight={800}
+                    fontSize={'0.875rem'}
 									>
 										<Text textColor="#1769B8" letterSpacing="0.2rem">
 											LEARN HOW YOU CAN TAKE PART
@@ -289,7 +292,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							</Text>
 						</Flex>
 						<VStack
-							fontSize="0.87rem"
+							fontSize="0.875rem"
 							gap="7"
 							w="100%"
 							textColor="#DAEDFA"
@@ -321,6 +324,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 									fontWeight="700"
 									onClick={scrollToRecap}
 									letterSpacing="0.2rem"
+                  fontSize="0.875rem"
 								>
 									CHECK OUT WHAT HAPPENED <br /> IN CITYSERVE 2024
 								</Text>

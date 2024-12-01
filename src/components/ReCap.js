@@ -60,7 +60,7 @@ const ReCap = forwardRef((props, ref) => {
 				fontWeight="400"
 				fontSize={{ base: '0.875rem', lg: '1.25rem' }}
 				textAlign={{ base: 'left', md: 'center', lg: 'center' }}
-				px={{ base: '1rem', md: '5rem', lg: '8rem' }}
+				px={{ base: '0rem', md: '5rem', lg: '8rem' }}
 			>
 				The 2024 CityServe took place on Sunday, March 17th. Churches,
 				organizations, and participants came together to serve the different
