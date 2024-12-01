@@ -61,7 +61,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 					fontFamily="'Manrope', sans-serif"
 					textAlign={'center'}
 					wordBreak="break-word"
-          fontColor="#183B5D"
+					fontColor="#183B5D"
 				>
 					{description}
 				</Text>
@@ -113,7 +113,6 @@ const ParticipateSection = forwardRef((props, ref) => {
 					fontSize={{ base: '0.875rem', md: '1.25rem' }}
 					fontFamily="'Manrope', sans-serif"
 					maxW={{ base: '100%', lg: '45%' }}
-
 				>
 					Whether you’re a church, an NGO, or charity, we have various avenues
 					to have you take part in CityServe.
@@ -178,8 +177,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 									fontFamily={'Manrope, sans-serif'}
 									fontWeight="800"
 									textAlign={'center'}
-                  letterSpacing={'0.12rem'}
-
+									letterSpacing={'0.12rem'}
 								>
 									you may choose from the below 3 CITYSERVE MODEs to join in the
 									movement:
@@ -187,7 +185,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 								<Box
 									display={'flex'}
 									flexDir={{ base: 'column', lg: 'row' }}
-									alignItems={{ base: 'flex-start'}}
+									alignItems={{ base: 'flex-start' }}
 									justifyContent={'center'}
 									mt={'1.25rem'}
 									gap={'2rem'}
@@ -230,8 +228,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 									fontFamily={'Manrope, sans-serif'}
 									fontWeight={800}
 									textAlign={'center'}
-                  letterSpacing={'0.12rem'}
-
+									letterSpacing={'0.12rem'}
 								>
 									If you are an ngo or charity, you can:
 								</Text>
