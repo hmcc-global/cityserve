@@ -94,7 +94,13 @@ const AboutSection = ({ recapRef, participateRef }) => {
                     }}
                     onClick={scrollToParticipate}
                   >
-                    <Text textColor="#1769B8" letterSpacing="0.2rem">
+                    <Text
+                      fontFamily="Manrope"
+                      textColor="#1769B8"
+                      letterSpacing="0.12rem"
+                      fontWeight="800"
+                      fontSize="1rem"
+                    >
                       LEARN HOW YOU CAN TAKE PART
                     </Text>
                   </Link>
@@ -249,7 +255,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                     _hover={{ textDecor: "none" }}
                     onClick={scrollToRecap}
                   >
-                    <Text textColor="#E0CEBB" fontWeight="700">
+                    <Text textColor="#E0CEBB" fontWeight="700" fontSize="1rem">
                       CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
                     </Text>
                   </Link>

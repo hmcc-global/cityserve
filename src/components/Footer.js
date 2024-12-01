@@ -5,7 +5,12 @@ import { MdMailOutline } from "react-icons/md";
 const Footer = () => {
   return (
     <Box maxW="100vw" bgColor="#DAEDFA" p={0}>
-      <Container maxW="container.xl" py="1rem" px={0}>
+      <Container
+        maxW="container.xl"
+        py="1rem"
+        px={0}
+        fontSize={{ base: "0.875", lg: "1rem" }}
+      >
         <Box
           display={"flex"}
           w="100%"

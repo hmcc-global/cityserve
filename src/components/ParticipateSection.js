@@ -93,6 +93,8 @@ const ParticipateSection = forwardRef((props, ref) => {
         justifyContent={{ base: "center", lg: "flex-start" }}
         gap={{ base: "1rem", lg: "10vw" }}
         mb={"4rem"}
+        textColor="#183B5D"
+        letterSpacing={{ base: "0.105rem", lg: "0.12rem" }}
       >
         <Text
           fontWeight={800}
@@ -136,6 +138,7 @@ const ParticipateSection = forwardRef((props, ref) => {
               fontSize={{ base: "0.875rem", md: "1rem" }}
               fontWeight={800}
               fontFamily={"Manrope, sans-serif"}
+              letterSpacing={{ base: "0.105rem", lg: "0.12rem" }}
             >
               FOR CHURCHES
             </Tab>
@@ -148,6 +151,7 @@ const ParticipateSection = forwardRef((props, ref) => {
               fontSize={{ base: "0.875rem", md: "1rem" }}
               fontWeight={800}
               fontFamily={"Manrope, sans-serif"}
+              letterSpacing={{ base: "0.105rem", lg: "0.12rem" }}
             >
               FOR NGOS / CHARITY
             </Tab>
@@ -167,6 +171,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                   fontFamily={"Manrope, sans-serif"}
                   fontWeight="800"
                   textAlign={"center"}
+                  letterSpacing={{ base: "0.105rem", lg: "0.12rem" }}
                 >
                   you may choose from the below 3 CITYSERVE MODEs to join in the
                   movement:
@@ -183,8 +188,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     "participant.svg",
                     "Participant",
                     "",
-                    "Invite your members or small groups to join in a pre-planned event organized by CityServe Planning Committee. These members will be joined by participants from other churches to serve one of 10 social categories.",
-                    "Size of organization: Less than 50 people"
+                    "Invite your members or small groups to join in a pre-planned event organized by CityServe Planning Committee. These members will be joined by participants from other churches to serve one of 10 social categories."
                   )}
                   <Divider
                     orientation="vertical"
@@ -197,8 +201,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     "partner.svg",
                     "partner",
                     "",
-                    "CityServe Planning Committee will partner with your church to plan an event for your congregation. Connections and resources will be shared to empower your congregation for a serving experience during CityServe.",
-                    "Size of Organization: More than 50 people"
+                    "CityServe Planning Committee will partner with your church to plan an event for your congregation. Connections and resources will be shared to empower your congregation for a serving experience during CityServe."
                   )}
                   <Divider
                     orientation="vertical"
@@ -211,8 +214,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     "planner.svg",
                     "Planner",
                     "",
-                    "Plan within your church to create your own CityServe event with your network and connections to be a part of the movement.",
-                    "Size of Organization: No limit"
+                    "Plan within your church to create your own CityServe event with your network and connections to be a part of the movement."
                   )}
                 </Box>
               </Box>
