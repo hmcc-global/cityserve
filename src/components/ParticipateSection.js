@@ -84,7 +84,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 	return (
 		<Container
 			maxW="container.xl"
-			px={{ base: '1rem', md: '2rem', lg: '3rem', xl: 0 }}
+			px={{ md: '2rem', lg: '3rem', xl: 0 }}
 			pt="5rem"
 			pb={{ base: '0', lg: '5rem' }}
 			ref={ref}
@@ -92,7 +92,8 @@ const ParticipateSection = forwardRef((props, ref) => {
 			<Box
 				display="flex"
 				flexDirection={{ base: 'column', lg: 'row' }}
-				p={0}
+				py={0}
+        px={{base: '1rem'}}
 				maxW="100%"
 				alignItems={{ base: 'flex-start', lg: 'center' }}
 				justifyContent={{ base: 'center', lg: 'flex-start' }}
@@ -122,6 +123,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 			<Box
 				py={'1.25rem'}
 				px={'1.375rem'}
+      minW="100vw"
 				bgColor={'#DAEDFA'}
 				borderRadius={{ base: 0, lg: '2rem' }}
 			>

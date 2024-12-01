@@ -50,7 +50,7 @@ const SocialNeedSection = () => {
       >
         <Text
           fontWeight={800}
-          fontSize={{ base: "1.75rem", lg: "2.25rem" }}
+          fontSize={{ base: "1.75rem", md: "2.25rem" }}
           textTransform={"uppercase"}
           fontFamily="'Antonio', sans-serif"
           textColor="#183B5D"
@@ -59,7 +59,7 @@ const SocialNeedSection = () => {
         </Text>
         <Text
           fontWeight={400}
-          fontSize={{ base: "0.875rem", lg: "1.25rem" }}
+          fontSize={{ base: "0.875rem", md: "1.25rem" }}
           fontFamily="'Manrope', sans-serif"
         >
           We identified 10 key social needs in Hong Kong to guide our service

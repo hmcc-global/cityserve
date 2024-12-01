@@ -156,7 +156,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 								w="70%"
 								borderRadius="0.6rem"
                 letterSpacing="0.12em"
-                p="1.75rem"
+                p={{base: "1rem", md: "1.75rem"}}
 							>
 								2025 INTEREST FORM
 							</Button>

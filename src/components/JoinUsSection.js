@@ -8,7 +8,7 @@ const JoinUsSection = forwardRef((props, ref) => {
       ref={ref}
       position="relative"
       width="100%"
-      height={{ base: "70vh", md: "55vh", lg: '40vh' }}
+      height={{ base: "60vh", md: "55vh", lg: '40vh' }}
       bgColor="#183B5D"
     >
       <Image
