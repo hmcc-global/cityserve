@@ -68,6 +68,7 @@ const Header = ({ recapRef, joinusRef }) => {
 						_hover={{ bg: '#183B5D', textDecor: 'none' }}
 						target="_blank"
 						borderRadius="0.6rem"
+            p="1.5rem"
 					>
 						2025 INTEREST FORM
 					</Button>
