@@ -21,7 +21,7 @@ const Footer = () => {
 
           <Link
             fontFamily="'Antonio', sans-serif"
-            fontSize={{ base: "0.875rem", md: "1.25rem" }}
+            fontSize={{ base: "1.125rem", md: "1.25rem" }}
             fontWeight="700"
             textTransform="uppercase"
             color="#0053A4"
@@ -33,7 +33,7 @@ const Footer = () => {
           <Text
             textAlign="center"
             color="#183B5D"
-            fontSize={{ base: "0.625rem", md: "0.75rem" }}
+            fontSize={{ base: "0.625rem", md: "1rem" }}
             fontFamily="'Manrope', sans-serif"
             fontWeight="400"
           >
@@ -54,7 +54,7 @@ const Footer = () => {
               />
               <Link
                 color="#183B5D"
-                fontSize={{ base: "0.875rem", md: "1rem" }}
+                fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontFamily="'Manrope', sans-serif"
                 fontWeight="400"
                 _hover={{ textDecoration: "underline" }}
@@ -72,7 +72,7 @@ const Footer = () => {
 
               <Link
                 color="#183B5D"
-                fontSize={{ base: "0.875rem", md: "1rem" }}
+                fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontFamily="'Manrope', sans-serif"
                 fontWeight="400"
                 wordBreak="break-word"

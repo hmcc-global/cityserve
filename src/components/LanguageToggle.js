@@ -17,6 +17,7 @@ const LanguageToggle = () => {
 			fontFamily={"'Manrope', sans-serif"}
 			fontWeight={800}
 			color={'#183B5D'}
+            fontSize={{ base: '0.875rem', md: '1rem' }}
 		>
 			<Text
 				fontWeight={language === 'en' ? '800' : '400'}

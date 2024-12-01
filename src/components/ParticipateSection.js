@@ -20,15 +20,17 @@ const ParticipateSection = forwardRef((props, ref) => {
 				display="flex"
 				flexDir="column"
 				alignItems="center"
-				justifyContent="center"
+				justifyContent="flex-start"
 				p="1rem"
 				w={{ base: '100%', lg: '32%' }}
 				gap="0.75rem"
 				minH="100%"
+				maxH="100%"
 			>
 				<Image
 					src={process.env.PUBLIC_URL + 'images/participate/' + iconPath}
 					minH="6rem"
+					maxH="6rem"
 					mb={'1rem'}
 				/>
 
@@ -59,6 +61,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 					fontFamily="'Manrope', sans-serif"
 					textAlign={'center'}
 					wordBreak="break-word"
+          fontColor="#183B5D"
 				>
 					{description}
 				</Text>
@@ -110,6 +113,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 					fontSize={{ base: '0.875rem', md: '1.25rem' }}
 					fontFamily="'Manrope', sans-serif"
 					maxW={{ base: '100%', lg: '45%' }}
+
 				>
 					Whether you’re a church, an NGO, or charity, we have various avenues
 					to have you take part in CityServe.
@@ -139,6 +143,7 @@ const ParticipateSection = forwardRef((props, ref) => {
 							py={'0.75rem'}
 							fontWeight={800}
 							fontFamily={'Manrope, sans-serif'}
+							letterSpacing={'0.12rem'}
 						>
 							FOR CHURCHES
 						</Tab>
@@ -149,8 +154,10 @@ const ParticipateSection = forwardRef((props, ref) => {
 							textTransform={'uppercase'}
 							flex={0.5}
 							fontSize={{ base: '0.875rem', md: '1rem' }}
+							py={'0.75rem'}
 							fontWeight={800}
 							fontFamily={'Manrope, sans-serif'}
+							letterSpacing={'0.12rem'}
 						>
 							FOR NGOS / CHARITY
 						</Tab>
@@ -171,6 +178,8 @@ const ParticipateSection = forwardRef((props, ref) => {
 									fontFamily={'Manrope, sans-serif'}
 									fontWeight="800"
 									textAlign={'center'}
+                  letterSpacing={'0.12rem'}
+
 								>
 									you may choose from the below 3 CITYSERVE MODEs to join in the
 									movement:
@@ -178,10 +187,10 @@ const ParticipateSection = forwardRef((props, ref) => {
 								<Box
 									display={'flex'}
 									flexDir={{ base: 'column', lg: 'row' }}
-									alignItems={{ base: 'flex-start', lg: 'flex-start' }}
+									alignItems={{ base: 'flex-start'}}
 									justifyContent={'center'}
 									mt={'1.25rem'}
-									gap={'1.5rem'}
+									gap={'2rem'}
 								>
 									{InfoBox(
 										'participant.svg',
@@ -221,16 +230,18 @@ const ParticipateSection = forwardRef((props, ref) => {
 									fontFamily={'Manrope, sans-serif'}
 									fontWeight={800}
 									textAlign={'center'}
+                  letterSpacing={'0.12rem'}
+
 								>
 									If you are an ngo or charity, you can:
 								</Text>
 								<Box
 									display={'flex'}
 									flexDir={{ base: 'column', lg: 'row' }}
-									alignItems={{ base: 'flex-start', lg: 'center' }}
+									alignItems={{ base: 'flex-start' }}
 									justifyContent={'center'}
 									mt={'1.25rem'}
-									gap={'1.5rem'}
+									gap={'2rem'}
 								>
 									{InfoBox(
 										'engage.svg',
