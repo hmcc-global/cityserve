@@ -129,10 +129,13 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							textColor="#183B5D"
 							gap={{ base: '1rem', md: '2rem' }}
 						>
-							<Text fontSize={{base: "1.75rem", md: "2.5rem"}} marginBottom="3">
+							<Text
+								fontSize={{ base: '1.75rem', md: '2.5rem' }}
+								marginBottom="3"
+							>
 								APRIL 4-6, 2025
 							</Text>
-							<Text fontSize={{base: "2rem", md: "2.75rem"}}>
+							<Text fontSize={{ base: '2rem', md: '2.75rem' }}>
 								TO BE A{' '}
 								<span style={{ color: '#1769B8' }}>VISIBLE DISPLAY</span> AND{' '}
 								<br />
@@ -146,7 +149,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							<Button
 								bgColor="#1769B8"
 								textColor="#F8F8F8"
-                fontSize={{base: "0.875rem", md: "1.25rem"}}
+								fontSize={{ base: '0.875rem', md: '1.25rem' }}
 								fontWeight="800"
 								href="https://forms.gle/UoAwhzPYqgkUsdcf6"
 								as={Link}
@@ -155,8 +158,8 @@ const AboutSection = ({ recapRef, participateRef }) => {
 								fontFamily="Manrope"
 								w="70%"
 								borderRadius="0.6rem"
-                letterSpacing="0.12em"
-                p={{base: "1rem", md: "1.75rem"}}
+								letterSpacing="0.12em"
+								p={{ base: '1rem', md: '1.75rem' }}
 							>
 								2025 INTEREST FORM
 							</Button>
@@ -180,14 +183,11 @@ const AboutSection = ({ recapRef, participateRef }) => {
 											textDecor: 'none',
 										}}
 										onClick={scrollToParticipate}
-                    fontFamily={"'Manrope', sans-serif"}
-                    fontWeight={800}
-                    fontSize={{base: "0.875rem", md: "1.25rem"}}
+										fontFamily={"'Manrope', sans-serif"}
+										fontWeight={800}
+										fontSize={{ base: '0.875rem', md: '1.25rem' }}
 									>
-										<Text display={{base: 'flex', md: 'none'}} textColor="#1769B8" letterSpacing="0.2rem">
-											LEARN HOW YOU CAN TAKE <br/> PART
-										</Text>
-                    <Text display={{base: 'none', md: 'flex'}} textColor="#1769B8" letterSpacing="0.2rem">
+										<Text textColor="#1769B8" letterSpacing="0.105rem">
 											LEARN HOW YOU CAN TAKE PART
 										</Text>
 									</Link>
@@ -287,7 +287,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							<Text
 								textColor="#99C6E6"
 								paddingLeft="6vw"
-								fontSize={{base: "1.75rem", md: "2.25rem"}}
+								fontSize={{ base: '1.75rem', md: '2.25rem' }}
 								fontFamily="Antonio"
 								fontWeight="700"
 							>
@@ -295,7 +295,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							</Text>
 						</Flex>
 						<VStack
-							fontSize={{base: "0.875rem", md: "1.25rem"}}
+							fontSize={{ base: '0.875rem', md: '1.25rem' }}
 							gap="7"
 							w="100%"
 							textColor="#DAEDFA"
@@ -327,7 +327,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 									fontWeight="700"
 									onClick={scrollToRecap}
 									letterSpacing="0.2rem"
-                  fontSize="0.875rem"
+									fontSize="0.875rem"
 								>
 									CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
 								</Text>
