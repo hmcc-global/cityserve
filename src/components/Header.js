@@ -100,14 +100,14 @@ const Header = ({ recapRef, joinusRef }) => {
 
 			<HStack
 				w="100%"
-				h="5vh"
+				h={{ base: '5vh', md: '7.5vh'}}
 				bgColor="#F8F8F8"
 				paddingX="5vw"
 				justifyContent="space-between"
 				fontFamily="Manrope"
 				letterSpacing="0.12em"
 				fontWeight="800"
-        fontSize="0.7rem"
+        fontSize={{ base: '0.7rem', md: '1rem' }}
 				display={isOpen ? 'flex' : 'none'}
 			>
 				<Link onClick={scrollToRecap}>
@@ -119,14 +119,14 @@ const Header = ({ recapRef, joinusRef }) => {
 				<Button
 					bgColor="#1769B8"
 					textColor="#F8F8F8"
-          fontSize="0.65rem"
+          fontSize={{ base: '0.7rem', md: '1rem' }}
 					fontWeight="800"
 					href="https://forms.gle/UoAwhzPYqgkUsdcf6"
 					as={Link}
 					target="_blank"
 					borderRadius="0.7rem"
 					h="70%"
-
+          p={{ base: "1rem", md: "1.5rem" }}
 				>
 					INTEREST FORM
 				</Button>

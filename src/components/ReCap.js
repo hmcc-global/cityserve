@@ -50,7 +50,7 @@ const ReCap = forwardRef((props, ref) => {
 			<Text
 				fontFamily="Antonio"
 				fontWeight="700"
-				fontSize={{ base: '1.75rem', lg: '2.25rem' }}
+				fontSize={{ base: '1.75rem', md: '2.25rem' }}
 			>
 				A RECAP OF CITYSERVE 2024
 			</Text>
@@ -58,7 +58,7 @@ const ReCap = forwardRef((props, ref) => {
 			<Text
 				fontFamily="Manrope"
 				fontWeight="400"
-				fontSize={{ base: '0.875rem', lg: '1.25rem' }}
+				fontSize={{ base: '0.875rem', md: '1.25rem' }}
 				textAlign={{ base: 'left', md: 'center', lg: 'center' }}
 				px={{ base: '0rem', md: '5rem', lg: '8rem' }}
 			>

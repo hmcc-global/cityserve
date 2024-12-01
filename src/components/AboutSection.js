@@ -31,9 +31,9 @@ const AboutSection = ({ recapRef, participateRef }) => {
 						base: `url(${
 							process.env.PUBLIC_URL + '/images/cityserve_bg_mobile.png'
 						})`,
-						md: `url(${process.env.PUBLIC_URL + '/images/cityserve_bg.jpg'})`,
+						lg: `url(${process.env.PUBLIC_URL + '/images/cityserve_bg.jpg'})`,
 					}}
-					backgroundPosition={{ base: 'bottom', md: 'center' }}
+					backgroundPosition={{ base: 'bottom', lg: 'center' }}
 					backgroundSize="cover"
 					minW="100%"
 				>
@@ -41,7 +41,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 					<HStack
 						w="100%"
 						h="95vh"
-						display={{ base: 'none', md: 'flex' }}
+						display={{ base: 'none', lg: 'flex' }}
 						letterSpacing="0.05em"
 						fontFamily="Antonio"
 					>
@@ -112,7 +112,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 					<VStack
 						minH="170vw"
 						letterSpacing="0.01rem"
-						display={{ base: 'flex', md: 'none' }}
+						display={{ base: 'flex', lg: 'none' }}
 						fontFamily="Antonio"
 					>
 						<Flex justifyContent="center" h="50%">
@@ -127,12 +127,12 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							alignItems="start"
 							fontWeight="700"
 							textColor="#183B5D"
-							gap="4"
+							gap={{ base: '1rem', md: '2rem' }}
 						>
-							<Text fontSize="1.75rem" marginBottom="3">
+							<Text fontSize={{base: "1.75rem", md: "2.5rem"}} marginBottom="3">
 								APRIL 4-6, 2025
 							</Text>
-							<Text fontSize="2rem">
+							<Text fontSize={{base: "2rem", md: "2.75rem"}}>
 								TO BE A{' '}
 								<span style={{ color: '#1769B8' }}>VISIBLE DISPLAY</span> AND{' '}
 								<br />
@@ -146,7 +146,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							<Button
 								bgColor="#1769B8"
 								textColor="#F8F8F8"
-								fontSize="0.875rem"
+                fontSize={{base: "0.875rem", md: "1.25rem"}}
 								fontWeight="800"
 								href="https://forms.gle/UoAwhzPYqgkUsdcf6"
 								as={Link}
@@ -156,7 +156,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 								w="70%"
 								borderRadius="0.6rem"
                 letterSpacing="0.12em"
-
+                p="1.75rem"
 							>
 								2025 INTEREST FORM
 							</Button>
@@ -182,9 +182,12 @@ const AboutSection = ({ recapRef, participateRef }) => {
 										onClick={scrollToParticipate}
                     fontFamily={"'Manrope', sans-serif"}
                     fontWeight={800}
-                    fontSize={'0.875rem'}
+                    fontSize={{base: "0.875rem", md: "1.25rem"}}
 									>
-										<Text textColor="#1769B8" letterSpacing="0.2rem">
+										<Text display={{base: 'flex', md: 'none'}} textColor="#1769B8" letterSpacing="0.2rem">
+											LEARN HOW YOU CAN TAKE <br/> PART
+										</Text>
+                    <Text display={{base: 'none', md: 'flex'}} textColor="#1769B8" letterSpacing="0.2rem">
 											LEARN HOW YOU CAN TAKE PART
 										</Text>
 									</Link>
@@ -204,7 +207,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 						w="100%"
 						alignItems="flex-start"
 						paddingTop="5vw"
-						display={{ base: 'none', md: 'flex' }}
+						display={{ base: 'none', lg: 'flex' }}
 						letterSpacing="0.05rem"
 					>
 						<Flex w="35%" h="100%">
@@ -277,14 +280,14 @@ const AboutSection = ({ recapRef, participateRef }) => {
 						w="100%"
 						alignItems="flex-start"
 						paddingTop="3vw"
-						display={{ base: 'flex', md: 'none' }}
+						display={{ base: 'flex', lg: 'none' }}
 						letterSpacing="0.01rem"
 					>
 						<Flex w="100%" h="100%" marginBottom="5">
 							<Text
 								textColor="#99C6E6"
 								paddingLeft="6vw"
-								fontSize="2.25rem"
+								fontSize={{base: "1.75rem", md: "2.25rem"}}
 								fontFamily="Antonio"
 								fontWeight="700"
 							>
@@ -292,7 +295,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 							</Text>
 						</Flex>
 						<VStack
-							fontSize="0.875rem"
+							fontSize={{base: "0.875rem", md: "1.25rem"}}
 							gap="7"
 							w="100%"
 							textColor="#DAEDFA"
@@ -326,7 +329,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 									letterSpacing="0.2rem"
                   fontSize="0.875rem"
 								>
-									CHECK OUT WHAT HAPPENED <br /> IN CITYSERVE 2024
+									CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
 								</Text>
 							</Link>
 						</VStack>
