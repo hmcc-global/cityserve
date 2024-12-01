@@ -326,7 +326,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 									textColor="#E0CEBB"
 									fontWeight="700"
 									onClick={scrollToRecap}
-									letterSpacing="0.2rem"
+									letterSpacing="0.105rem"
 									fontSize="0.875rem"
 								>
 									CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
