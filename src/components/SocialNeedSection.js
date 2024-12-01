@@ -12,8 +12,8 @@ const SocialNeedSection = () => {
         borderRadius="10px"
         borderColor="#F8F8F8"
         p={{ base: "0.3rem", lg: "0.3rem", xl: "1rem" }}
-        w={{ base: "100%", lg: "100%" }}
-        h={{ base: "22vw", lg: "16vw" }}
+        w={'100%'}
+        h={{ base: "30vw", md: "22.5vw", lg: "16vw" }}
         bgColor={color}
       >
         <Image
@@ -42,12 +42,11 @@ const SocialNeedSection = () => {
       <Box
         py={0}
         px={{ base: "1.5rem", md: "2rem", lg: "3rem", xl: 0 }}
-        maxW="100%"
         display={"flex"}
-        flexDirection="column"
-        alignItems="center"
+        flexDir={"column"}
+        alignItems={{ base: "flex-start", md: "center" }}
         justifyContent="space-between"
-        gap={{ base: "1.1rem", lg: "2rem" }}
+        gap={{ base: "1.1rem", lg: "1.5rem" }}
       >
         <Text
           fontWeight={800}
@@ -55,7 +54,6 @@ const SocialNeedSection = () => {
           textTransform={"uppercase"}
           fontFamily="'Antonio', sans-serif"
           textColor="#183B5D"
-          alignSelf={{ base: "start", lg: "center" }}
         >
           serving the social needs of HK
         </Text>
@@ -73,6 +71,7 @@ const SocialNeedSection = () => {
           w={{ base: "100%", lg: "86%" }}
           justifyContent="center"
           px={{ base: "0" }}
+          mt={'1rem'}
         >
           <Grid
             templateColumns={{ base: "repeat(2,1fr)", lg: "repeat(5, 1fr)" }}

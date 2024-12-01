@@ -8,7 +8,7 @@ const JoinUsSection = forwardRef((props, ref) => {
       ref={ref}
       position="relative"
       width="100%"
-      height="50vh"
+      height={{ base: "70vh", md: "55vh", lg: '40vh' }}
       bgColor="#183B5D"
     >
       <Image
@@ -28,7 +28,7 @@ const JoinUsSection = forwardRef((props, ref) => {
         left="50%"
         transform="translate(-50%, -50%)"
       >
-        <VStack gap={2} marginX={{ base: "3.5rem", xl: "25rem" }}>
+        <VStack gap={'2rem'} marginX={{ base: "3.5rem", xl: "22.5rem" }}>
           <Text
             fontFamily="Antonio"
             fontSize={{ base: "1.75rem", md: "2.25rem" }}

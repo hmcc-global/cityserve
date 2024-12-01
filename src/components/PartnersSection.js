@@ -21,31 +21,51 @@ const PartnersSection = () => {
 				borderRadius="10px"
 				borderColor="#F8F8F8"
 				boxShadow="0px 0px 3px 0px rgba(0, 0, 0, 0.2)"
-				p="1.25rem"
-				w={{ base: '42.5vw', lg: '17.5vw', xl: '17.5vw' }}
+				px="1rem"
+				py="1.25rem"
+				w={{ base: '42.5vw', lg: '17.5vw', xl: '15vw' }}
 				minH={'100%'}
 			>
-				<Image src={process.env.PUBLIC_URL + imagePath} h="6rem" mb={'1rem'} />
-				<Text
-					fontWeight={800}
-					fontSize={{ base: '0.875rem', md: '1rem' }}
-					fontFamily="'Manrope', sans-serif"
-					textTransform={'uppercase'}
-					textAlign={'center'}
-					wordBreak="break-word"
-					maxW={{ base: '37.5vw', lg: '12.5vw', xl: '15vw' }}
-				>
-					{title}
-				</Text>
+				<Grid templateRows="repeat(2, 1fr)" gap={'1rem'} w="100%">
+					<GridItem display="flex" justifyContent="center">
+						<Image
+							src={process.env.PUBLIC_URL + imagePath}
+							minH="6rem"
+							maxH="6rem"
+						/>
+					</GridItem>
+					<GridItem
+						display="flex"
+						justifyContent="center"
+						alignItems={'center'}
+					>
+						<Text
+							fontWeight={800}
+							fontSize={{ base: '0.875rem', md: '1rem' }}
+							fontFamily="'Manrope', sans-serif"
+							textTransform={'uppercase'}
+							textAlign={'center'}
+							wordBreak="break-word"
+							color={'#183B5D'}
+							letterSpacing={'0.05rem'}
+						>
+							{title}
+						</Text>
+					</GridItem>
+				</Grid>
 			</Box>
 		);
 	};
 
 	return (
-		<Container maxW="container.xl" py="4rem" px={0}>
+		<Container
+			maxW="container.xl"
+			py={{ base: '1rem', md: '3rem', lg: '4.5rem', xl: '6rem' }}
+			px={{ base: '1rem', md: '2rem', lg: '3rem', xl: 0 }}
+			>
 			<Box
-				py={0}
-				px={{ base: '1rem', md: '2rem', lg: '3rem', xl: 0 }}
+				p={0}
+				
 				maxW="100%"
 				fontFamily="Gotham"
 				display={'flex'}
@@ -58,7 +78,7 @@ const PartnersSection = () => {
 					textColor="#183B5D"
 					w="100%"
 					gap="1rem"
-					width={{ base: '100%', lg: '20vw' }}
+					width={{ base: '100%', lg: '15vw' }}
 					alignItems="flex-start"
 				>
 					<Text
@@ -74,7 +94,8 @@ const PartnersSection = () => {
 						fontSize={{ base: '0.875rem', md: '1.25rem' }}
 						fontFamily="'Manrope', sans-serif"
 					>
-						Organizations and ministries partnered with us during <strong>CityServe 2024</strong>.
+						Organizations and ministries partnered with us during{' '}
+						<strong>CityServe 2024</strong>.
 					</Text>
 				</VStack>
 				<Flex

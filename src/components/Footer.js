@@ -1,6 +1,7 @@
 import { Link, Container, Text, Box, HStack, Icon } from "@chakra-ui/react";
 import { FaInstagram } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
+import LanguageToggle from "./LanguageToggle";
 
 const Footer = () => {
   return (
@@ -16,28 +17,23 @@ const Footer = () => {
           rowGap={"1rem"}
           px={{ base: "1rem", md: "2rem", lg: "3rem", xl: 0 }}
         >
-          <HStack
-            alignItems={"center"}
-            fontFamily={"'Manrope', sans-serif"}
-            fontWeight={800}
-          >
-            <Text>EN</Text>
-            <Text> | </Text>
-            <Text>繁</Text>
-          </HStack>
-          <Text
+          					<LanguageToggle />
+
+          <Link
             fontFamily="'Antonio', sans-serif"
-            fontSize={{ base: "0.875rem", md: "1.25rem" }}
+            fontSize={{ base: "1.125rem", md: "1.25rem" }}
             fontWeight="700"
             textTransform="uppercase"
             color="#0053A4"
+            _hover={{ cursor: 'pointer' }}
+            href="/"
           >
             CITYSERVE HONG KONG
-          </Text>
+          </Link>
           <Text
             textAlign="center"
             color="#183B5D"
-            fontSize={{ base: "0.625rem", md: "0.75rem" }}
+            fontSize={{ base: "0.625rem", md: "1rem" }}
             fontFamily="'Manrope', sans-serif"
             fontWeight="400"
           >
@@ -58,7 +54,7 @@ const Footer = () => {
               />
               <Link
                 color="#183B5D"
-                fontSize={{ base: "0.875rem", md: "1rem" }}
+                fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontFamily="'Manrope', sans-serif"
                 fontWeight="400"
                 _hover={{ textDecoration: "underline" }}
@@ -76,7 +72,7 @@ const Footer = () => {
 
               <Link
                 color="#183B5D"
-                fontSize={{ base: "0.875rem", md: "1rem" }}
+                fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontFamily="'Manrope', sans-serif"
                 fontWeight="400"
                 wordBreak="break-word"
