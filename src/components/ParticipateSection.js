@@ -123,7 +123,6 @@ const ParticipateSection = forwardRef((props, ref) => {
 			<Box
 				py={'1.25rem'}
 				px={'1.375rem'}
-      minW="100vw"
 				bgColor={'#DAEDFA'}
 				borderRadius={{ base: 0, lg: '2rem' }}
 			>
