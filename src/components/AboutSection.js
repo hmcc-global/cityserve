@@ -308,16 +308,20 @@ const AboutSection = ({ recapRef, participateRef }) => {
               fontFamily="Manrope"
             >
               <Text>
-                CityServe is a city-wide movement to partner with local churches
-                and organizations to serve others and demonstrate God’s love for
-                the city.
+                CityServe Hong Kong is a city-wide movement for local churches
+                united in their mission to serve communities across Hong Kong
+                and to demonstrate God’s love for the city.
               </Text>
               <Text>
-                CityServe Hong Kong was initiated to see churches and
-                organizations coming together on a Sunday, to go beyond the four
-                walls of the church. We want to be God’s witness by loving and
-                serving the poor, marginalised, and unreached people of Hong
-                Kong.
+                CityServe aspires to be a transformative movement that connects
+                churches and local NGOs & charitable organizations each year on
+                a designated weekend. We aim to serve as our expression of
+                worship. Our mission is to be witnesses of God’s love by
+                actively loving and serving the poor, marginalized, and
+                unreached individuals in Hong Kong. Through our collective
+                efforts, we hope to inspire the city to take notice and proclaim
+                the good news through our acts of service, fostering a community
+                rooted in compassion and hope.
               </Text>
               <Link w="100%" display="flex">
                 <Img
