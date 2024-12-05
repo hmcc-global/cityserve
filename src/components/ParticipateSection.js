@@ -260,7 +260,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     "exhibit.svg",
                     "Exhibit",
                     "",
-                    "Exhibit God’s work by serving and caring for the unreached through CityServe.",
+                    "Exhibit the work your organization is engaged in, educate participants on the needs in the city and respective impact to the society.",
                     ""
                   )}
                 </Box>
