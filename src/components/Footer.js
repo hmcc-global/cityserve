@@ -1,7 +1,7 @@
 import { Link, Container, Text, Box, HStack, Icon } from "@chakra-ui/react";
 import { FaInstagram } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
-import LanguageToggle from "./LanguageToggle";
+// import LanguageToggle from "./LanguageToggle";
 
 const Footer = () => {
   return (

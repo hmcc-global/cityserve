@@ -1,6 +1,6 @@
 import { HStack, Text, Link, Button, Img, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
-import LanguageToggle from "./LanguageToggle";
+// import LanguageToggle from "./LanguageToggle";
 
 const Header = ({ recapRef, joinusRef }) => {
   const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
