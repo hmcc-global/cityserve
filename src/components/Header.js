@@ -75,7 +75,7 @@ const Header = ({ recapRef, joinusRef }) => {
           >
             2025 INTEREST FORM
           </Button>
-          <LanguageToggle />
+          {/* <LanguageToggle /> */}
         </HStack>
 
         {/* Mobile version */}
@@ -96,7 +96,7 @@ const Header = ({ recapRef, joinusRef }) => {
               my="auto"
             />
           </Button>
-          <LanguageToggle />
+          {/* <LanguageToggle /> */}
         </HStack>
       </HStack>
 

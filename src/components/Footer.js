@@ -17,7 +17,7 @@ const Footer = () => {
           rowGap={"1rem"}
           px={{ base: "1rem", md: "2rem", lg: "3rem", xl: 0 }}
         >
-          					<LanguageToggle />
+          {/* <LanguageToggle /> */}
 
           <Link
             fontFamily="'Antonio', sans-serif"
@@ -25,7 +25,7 @@ const Footer = () => {
             fontWeight="700"
             textTransform="uppercase"
             color="#0053A4"
-            _hover={{ cursor: 'pointer' }}
+            _hover={{ cursor: "pointer" }}
             href="/"
           >
             CITYSERVE HONG KONG
