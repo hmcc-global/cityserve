@@ -1,7 +1,7 @@
 import { Link, Container, Text, Box, HStack, Icon } from "@chakra-ui/react";
 import { FaInstagram } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
-// import LanguageToggle from "./LanguageToggle";
+import LanguageToggle from "./LanguageToggle";
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
           rowGap={"1rem"}
           px={{ base: "1rem", md: "2rem", lg: "3rem", xl: 0 }}
         >
-          {/* <LanguageToggle /> */}
+          <LanguageToggle />
 
           <Link
             fontFamily="'Antonio', sans-serif"

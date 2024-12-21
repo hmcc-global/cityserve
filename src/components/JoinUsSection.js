@@ -1,8 +1,12 @@
 import React, { forwardRef } from "react";
 
 import { Text, VStack, Link, Button, Box, Image } from "@chakra-ui/react";
+import { useLanguage } from "./LanguageToggle";
+import translations from "./Translation";
 
 const JoinUsSection = forwardRef((props, ref) => {
+  const { language } = useLanguage();
+
   return (
     <Box
       ref={ref}
@@ -35,7 +39,7 @@ const JoinUsSection = forwardRef((props, ref) => {
             fontWeight="700"
             textAlign="center"
           >
-            JOIN US IN CITYSERVE 2025
+            {translations[language].joinUs.title}
           </Text>
 
           <Text
@@ -44,8 +48,7 @@ const JoinUsSection = forwardRef((props, ref) => {
             fontWeight="400"
             textAlign="center"
           >
-            If you would like to take part in CityServe 2025 or if you have any
-            questions, indicate your interest in the form below or contact us
+            {translations[language].joinUs.description}
             &nbsp;
             <Link
               href="https://linktr.ee/cityservehk"
@@ -54,7 +57,7 @@ const JoinUsSection = forwardRef((props, ref) => {
               fontWeight="700"
               textDecoration="underline"
             >
-              here
+              {translations[language].joinUs.link}
             </Link>
             .
           </Text>
@@ -82,7 +85,7 @@ const JoinUsSection = forwardRef((props, ref) => {
             },
           }}
         >
-          2025 INTEREST FORM
+          {translations[language].interestForm}
         </Button>
       </VStack>
     </Box>

@@ -1,8 +1,12 @@
 import { HStack, Text, Link, Button, Img, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
-// import LanguageToggle from "./LanguageToggle";
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "./LanguageToggle";
+import translations from "./Translation";
 
 const Header = ({ recapRef, joinusRef }) => {
+  const { language } = useLanguage();
+
   const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
 
   const toggleDropdown = () => {
@@ -54,11 +58,11 @@ const Header = ({ recapRef, joinusRef }) => {
           justifyContent="end"
         >
           <Link onClick={scrollToRecap}>
-            <Text fontSize="1rem">2024 RECAP</Text>
+            <Text fontSize="1rem">{translations[language].header.recap}</Text>
           </Link>
           <Link onClick={scrollToParticipate}>
             <Text fontSize="1rem" S>
-              PARTICIPATE
+              {translations[language].header.participate}
             </Text>
           </Link>
           <Button
@@ -73,9 +77,9 @@ const Header = ({ recapRef, joinusRef }) => {
             borderRadius="0.6rem"
             p="1.5rem"
           >
-            2025 INTEREST FORM
+            {translations[language].interestForm}
           </Button>
-          {/* <LanguageToggle /> */}
+          <LanguageToggle />
         </HStack>
 
         {/* Mobile version */}
@@ -96,7 +100,7 @@ const Header = ({ recapRef, joinusRef }) => {
               my="auto"
             />
           </Button>
-          {/* <LanguageToggle /> */}
+          <LanguageToggle />
         </HStack>
       </HStack>
 
@@ -116,10 +120,10 @@ const Header = ({ recapRef, joinusRef }) => {
         zIndex={10}
       >
         <Link onClick={scrollToRecap}>
-          <Text>2024 RECAP</Text>
+          <Text>{translations[language].header.recap}</Text>
         </Link>
         <Link onClick={scrollToParticipate}>
-          <Text>PARTICIPATE</Text>
+          <Text>{translations[language].header.participate}</Text>
         </Link>
         <Button
           bgColor="#1769B8"
@@ -133,7 +137,7 @@ const Header = ({ recapRef, joinusRef }) => {
           h="70%"
           p={{ base: "1rem", md: "1.5rem" }}
         >
-          INTEREST FORM
+          {translations[language].interestForm}
         </Button>
       </HStack>
     </VStack>
