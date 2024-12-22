@@ -95,7 +95,7 @@ const translations = {
       mission_highlight_1: "具體的服務",
       mission_and: "和",
       mission_highlight_2: "實際的行動",
-      mission_2: "向我們的城市表揚上帝的愛",
+      mission_2: `向我們的城市表揚上帝的愛`,
       learnHow: "如何參與",
       whatIs: "CITYSERVE 是什麼？",
       description_1:
@@ -160,7 +160,7 @@ const translations = {
     },
     partners: {
       title: "我們的合作夥伴",
-      description: "在2024年CityServe 與我們合作的教會和組織",
+      description: "與我們合作的教會和組織",
     },
   },
 };

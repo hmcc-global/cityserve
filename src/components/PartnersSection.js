@@ -96,9 +96,19 @@ const PartnersSection = () => {
             fontWeight={400}
             fontSize={{ base: "0.875rem", md: "1.25rem" }}
             fontFamily="'Manrope', sans-serif"
+            display={language === "en" ? "block" : "none"}
           >
             {translations[language].partners.description}{" "}
             <strong>CityServe 2024</strong>.
+          </Text>
+          <Text
+            fontWeight={400}
+            fontSize={{ base: "0.875rem", md: "1.25rem" }}
+            fontFamily="'Manrope', sans-serif"
+            display={language === "zh" ? "block" : "none"}
+          >
+            在<strong>CityServe 2024</strong>
+            {translations[language].partners.description}
           </Text>
         </VStack>
         <Flex

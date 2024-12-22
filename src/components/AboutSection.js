@@ -130,6 +130,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
             </Flex>
             <VStack
               h="50%"
+              w="80%"
               alignItems="start"
               fontWeight="700"
               textColor="#183B5D"
