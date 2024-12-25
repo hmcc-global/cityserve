@@ -103,7 +103,7 @@ const translations = {
       description_2:
         "CityServe 的願景是啟動一個轉變城市的運動，旨在每年在指定的週末連接教會和當地慈善組織機構。我們的目標是將服務作為我們崇拜的表達。我們的使命是透過實際行動關愛和服務香港的貧困、邊緣化及未接觸的個體，見證上帝的愛。通過我們的共同努力，我們希望激勵城市注意到我們的服務行動，並傳揚好消息，培養根植於同情和希望的社區。",
       interestForm: "2025 意向表格",
-      recap: "CHECK OUT WHAT HAPPENED IN CITYSERVE 2024",
+      recap: "看看2024年 CityServe 的回顧影片",
     },
     socialNeed: {
       title: "服務香港的社會需求",
@@ -126,7 +126,7 @@ const translations = {
       link: "聯繫我們",
     },
     recap: {
-      title: "回顧2024年Cityserve",
+      title: "回顧2024年CityServe",
       description:
         "2024 年的 CityServe 於3月17日星期日舉行。教會、慈善組織和參與者共聚一堂，服務城市的不同需求。以下是我們所見證到的數據。請收看我們的視頻以了解我們所經歷的一切以及上帝的愛被彰顯在香港居民當中！",
       participants: "參加者",
@@ -150,6 +150,7 @@ const translations = {
       plannerDescription:
         "透過您已經具有的聯繫和資源來創建您自己的CityServe活動，成為這一運動的一部分。",
       forNGOs: "如果你代表慈善組織和機構：",
+      ifNGOs: "如果你是慈善機構，你可以：",
       engage: "服務",
       engageDescription: "通過已經預設的活動服務有需要的人群，關懷我們的城市。",
       empower: "供應",
