@@ -86,9 +86,9 @@ const translations = {
   zh: {
     header: {
       recap: "2024 回顧",
-      participate: "參加",
+      participate: "參與",
     },
-    interestForm: "2025 意向表格",
+    interestForm: "CityServe 2025 意向表格",
     about: {
       date: "2025年 4月4-6日",
       mission_1: "以",
@@ -97,38 +97,38 @@ const translations = {
       mission_highlight_2: "實際的行動",
       mission_2: `向我們的城市表揚上帝的愛`,
       learnHow: "如何參與",
-      whatIs: "CITYSERVE 是什麼？",
+      whatIs: "什麼是CityServe？",
       description_1:
         "CityServe是服務香港全市的一項活動，希望與當地教會和組織合作，一起以具體的方式表達上帝的愛。",
       description_2:
         "CityServe 的願景是啟動一個轉變城市的運動，旨在每年在指定的週末連接教會和當地慈善組織機構。我們的目標是將服務作為我們崇拜的表達。我們的使命是透過實際行動關愛和服務香港的貧困、邊緣化及未接觸的個體，見證上帝的愛。通過我們的共同努力，我們希望激勵城市注意到我們的服務行動，並傳揚好消息，培養根植於同情和希望的社區。",
-      interestForm: "2025 意向表格",
+      interestForm: "CityServe 2025 意向表格",
       recap: "看看2024年 CityServe 的回顧影片",
     },
     socialNeed: {
       title: "服務香港的社會需求",
       description: "我們識別了10個在香港關鍵的社會需求，以指導我們的服務工作",
       children: "兒童",
-      domesticHelpers: "家庭幫傭",
+      domesticHelpers: "家庭傭工",
       domesticIssues: "家庭問題",
       elderly: "老年人",
-      ethnicMinorities: "少數民族",
-      handicapped: "殘障人士",
+      ethnicMinorities: "少數族裔",
+      handicapped: "傷健人士",
       environmental: "環境問題",
-      poor: "貧困和無家可歸者",
+      poor: "貧困和無家者",
       mentalHealth: "心理健康",
       lowIncome: "低收入家庭",
     },
     joinUs: {
-      title: "2025年一同參與CityServe",
+      title: "一同參與CityServe2025",
       description:
-        "如果您想參加 CityServe 2025 或有任何問題，請在下面的表格中表達您的興趣或",
+        "如果您想參加CityServe 2025或有任何問題，請在下方的表格中表達您的意願，或在此與我們聯繫。",
       link: "聯繫我們",
     },
     recap: {
       title: "回顧2024年CityServe",
       description:
-        "2024 年的 CityServe 於3月17日星期日舉行。教會、慈善組織和參與者共聚一堂，服務城市的不同需求。以下是我們所見證到的數據。請收看我們的視頻以了解我們所經歷的一切以及上帝的愛被彰顯在香港居民當中！",
+        "2024 年的 CityServe 於3月17日星期日舉行。不同教會、慈善組織和參加者共聚一堂，服務城市中不同的需求。以下是我們蒐集的影響力統計。請收看我們的視頻以了解我們所經歷的一切以及參加者如何見證上帝的愛被彰顯在香港居民當中！",
       participants: "參加者",
       churches: "教會",
       ngos: "慈善組織",
@@ -142,22 +142,22 @@ const translations = {
       chooseMode: "可以選擇以下其中一個方式參與CityServe:",
       participant: "參與者",
       participantDescription:
-        "邀請您的成員或小組參加由CityServe策劃團隊的預定活動。這些成員將與來自其他教會的參與者一起，為10個社會需求之一提供服務。",
+        "邀請您的成員或小組參加由CityServe策劃團隊的預定活動。這些隊伍將由來自不同教會的參與者一起組成，他們為其中一個社會需求的服務對象提供服務。",
       partner: "合作者",
       partnerDescription:
-        "CityServe策劃團隊將與您的教會合作，為您的會眾策劃一個活動。我們會與您分享聯繫和資源，以助於您的會眾在CityServe期間的服務體驗。",
+        "CityServe策劃團隊將與您的教會合作，為您的會眾策劃一項活動。我們將共享人脈和資源，讓您的會眾在 CityServe 期間獲得服務體驗。",
       planner: "策劃者",
       plannerDescription:
-        "透過您已經具有的聯繫和資源來創建您自己的CityServe活動，成為這一運動的一部分。",
+        "透過您已經具有的人脈和資源來創建您自己的CityServe活動，成為這運動的一部分。",
       forNGOs: "如果你代表慈善組織和機構：",
       ifNGOs: "如果你是慈善機構，你可以：",
-      engage: "服務",
+      engage: "參與服務",
       engageDescription: "通過已經預設的活動服務有需要的人群，關懷我們的城市。",
-      empower: "供應",
+      empower: "提供資源",
       empowerDescription: "供應你的平台給教會和小組事工參與你的服務活動項目。",
-      exhibit: "展示",
+      exhibit: "提供服務機會",
       exhibitDescription:
-        "展示您的組織所參與的工作，提供參與者更多的資源了解城市中的社會需求及您的組織對社會的影響。",
+        "分享您組織的工作，為參與者提供更多的渠道了解城市中的需求以及您的組織對社會的影響。",
     },
     partners: {
       title: "我們的合作夥伴",
