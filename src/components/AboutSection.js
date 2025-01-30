@@ -9,8 +9,12 @@ import {
   Img,
   Button,
 } from "@chakra-ui/react";
+import { useLanguage } from "./LanguageToggle";
+import translations from "./Translation";
 
 const AboutSection = ({ recapRef, participateRef }) => {
+  const { language } = useLanguage();
+
   const scrollToRecap = () => {
     if (recapRef.current) {
       recapRef.current.scrollIntoView({ behavior: "smooth" });
@@ -60,18 +64,20 @@ const AboutSection = ({ recapRef, participateRef }) => {
               textColor="#183B5D"
             >
               <Text fontSize="1.8rem" marginBottom="5">
-                APRIL 4-6, 2025
+                {translations[language].about.date}
               </Text>
               <Text fontSize="2.75rem" marginBottom="10">
-                TO BE A{" "}
-                <span style={{ color: "#1769B8" }}>VISIBLE DISPLAY</span> AND{" "}
-                <br />
+                {translations[language].about.mission_1}{" "}
+                <span style={{ color: "#1769B8" }}>
+                  {translations[language].about.mission_highlight_1}
+                </span>{" "}
+                {translations[language].about.mission_and} <br />
                 <span style={{ color: "#1769B8" }}>
                   {" "}
-                  VIABLE DEMONSTRATION OF
+                  {translations[language].about.mission_highlight_2}
                 </span>{" "}
                 <br />
-                GOD'S LOVE FOR THE CITY
+                {translations[language].about.mission_2}
               </Text>
               <HStack>
                 <Img
@@ -100,7 +106,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                       fontFamily={"'Manrope', sans-serif"}
                       fontWeight={800}
                     >
-                      LEARN HOW YOU CAN TAKE PART
+                      {translations[language].about.learnHow}
                     </Text>
                   </Link>
                 </Box>
@@ -124,6 +130,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
             </Flex>
             <VStack
               h="50%"
+              w="80%"
               alignItems="start"
               fontWeight="700"
               textColor="#183B5D"
@@ -133,18 +140,20 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 fontSize={{ base: "1.75rem", md: "2.5rem" }}
                 marginBottom="3"
               >
-                APRIL 4-6, 2025
+                {translations[language].about.date}
               </Text>
               <Text fontSize={{ base: "2rem", md: "2.75rem" }}>
-                TO BE A{" "}
-                <span style={{ color: "#1769B8" }}>VISIBLE DISPLAY</span> AND{" "}
-                <br />
+                {translations[language].about.mission_1}{" "}
+                <span style={{ color: "#1769B8" }}>
+                  {translations[language].about.mission_highlight_1}
+                </span>{" "}
+                {translations[language].about.mission_and} <br />
                 <span style={{ color: "#1769B8" }}>
                   {" "}
-                  VIABLE DEMONSTRATION OF
+                  {translations[language].about.mission_highlight_2}
                 </span>{" "}
                 <br />
-                GOD'S LOVE FOR THE CITY
+                {translations[language].about.mission_2}
               </Text>
               <Button
                 bgColor="#1769B8"
@@ -161,7 +170,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 letterSpacing="0.12em"
                 p={{ base: "1rem", md: "1.75rem" }}
               >
-                2025 INTEREST FORM
+                {translations[language].interestForm}
               </Button>
               <HStack>
                 <Img
@@ -188,7 +197,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                     fontSize={{ base: "0.875rem", md: "1.25rem" }}
                   >
                     <Text textColor="#1769B8" letterSpacing="0.105rem">
-                      LEARN HOW YOU CAN TAKE PART
+                      {translations[language].about.learnHow}
                     </Text>
                   </Link>
                 </Box>
@@ -218,7 +227,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 fontFamily="Antonio"
                 fontWeight="700"
               >
-                WHAT IS CITYSERVE?
+                {translations[language].about.whatIs}
               </Text>
             </Flex>
             <VStack
@@ -229,22 +238,8 @@ const AboutSection = ({ recapRef, participateRef }) => {
               paddingLeft="5vw"
               paddingRight="9vw"
             >
-              <Text>
-                CityServe Hong Kong is a city-wide movement for local churches
-                united in their mission to serve communities across Hong Kong
-                and to demonstrate God’s love for the city.
-              </Text>
-              <Text>
-                CityServe aspires to be a transformative movement that connects
-                churches and local NGOs & charitable organizations each year on
-                a designated weekend. We aim to serve as our expression of
-                worship. Our mission is to be witnesses of God’s love by
-                actively loving and serving the poor, marginalized, and
-                unreached individuals in Hong Kong. Through our collective
-                efforts, we hope to inspire the city to take notice and proclaim
-                the good news through our acts of service, fostering a community
-                rooted in compassion and hope.
-              </Text>
+              <Text>{translations[language].about.description_1}</Text>
+              <Text>{translations[language].about.description_2}</Text>
               <HStack w="100%">
                 <Img
                   src={process.env.PUBLIC_URL + "images/trianglevec_skin.svg"}
@@ -271,7 +266,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                       fontSize="1rem"
                       letterSpacing="0.2rem"
                     >
-                      CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
+                      {translations[language].about.recap}
                     </Text>
                   </Link>
                 </Box>
@@ -295,7 +290,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 fontFamily="Antonio"
                 fontWeight="700"
               >
-                WHAT IS CITYSERVE?
+                {translations[language].about.whatIs}
               </Text>
             </Flex>
             <VStack
@@ -307,22 +302,8 @@ const AboutSection = ({ recapRef, participateRef }) => {
               paddingRight="5vw"
               fontFamily="Manrope"
             >
-              <Text>
-                CityServe Hong Kong is a city-wide movement for local churches
-                united in their mission to serve communities across Hong Kong
-                and to demonstrate God’s love for the city.
-              </Text>
-              <Text>
-                CityServe aspires to be a transformative movement that connects
-                churches and local NGOs & charitable organizations each year on
-                a designated weekend. We aim to serve as our expression of
-                worship. Our mission is to be witnesses of God’s love by
-                actively loving and serving the poor, marginalized, and
-                unreached individuals in Hong Kong. Through our collective
-                efforts, we hope to inspire the city to take notice and proclaim
-                the good news through our acts of service, fostering a community
-                rooted in compassion and hope.
-              </Text>
+              <Text>{translations[language].about.description_1}</Text>
+              <Text>{translations[language].about.description_2}</Text>
               <Link w="100%" display="flex">
                 <Img
                   src={process.env.PUBLIC_URL + "images/trianglevec_skin.svg"}
@@ -337,7 +318,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                   letterSpacing="0.105rem"
                   fontSize="0.875rem"
                 >
-                  CHECK OUT WHAT HAPPENED IN CITYSERVE 2024
+                  {translations[language].about.recap}
                 </Text>
               </Link>
             </VStack>

@@ -9,32 +9,36 @@ import {
   Box,
   Center,
 } from "@chakra-ui/react";
-
-const cardsData = [
-  {
-    title: "PARTICIPANTS",
-    number: "296",
-    backgroundImage:
-      process.env.PUBLIC_URL + "images/recap_participants_card.png",
-  },
-  {
-    title: "CHURCHES",
-    number: "8",
-    backgroundImage: process.env.PUBLIC_URL + "images/recap_church_card.png",
-  },
-  {
-    title: "NGOs",
-    number: "8",
-    backgroundImage: process.env.PUBLIC_URL + "images/recap_ngo_card.png",
-  },
-  {
-    title: "PEOPLE REACHED",
-    number: "584",
-    backgroundImage: process.env.PUBLIC_URL + "images/recap_reached_card.png",
-  },
-];
+import { useLanguage } from "./LanguageToggle";
+import translations from "./Translation";
 
 const ReCap = forwardRef((props, ref) => {
+  const { language } = useLanguage();
+
+  const cardsData = [
+    {
+      title: translations[language].recap.participants,
+      number: "296",
+      backgroundImage:
+        process.env.PUBLIC_URL + "images/recap_participants_card.png",
+    },
+    {
+      title: translations[language].recap.churches,
+      number: "8",
+      backgroundImage: process.env.PUBLIC_URL + "images/recap_church_card.png",
+    },
+    {
+      title: translations[language].recap.ngos,
+      number: "8",
+      backgroundImage: process.env.PUBLIC_URL + "images/recap_ngo_card.png",
+    },
+    {
+      title: translations[language].recap.peopleReached,
+      number: "584",
+      backgroundImage: process.env.PUBLIC_URL + "images/recap_reached_card.png",
+    },
+  ];
+
   return (
     <VStack
       w="100%"
@@ -52,7 +56,7 @@ const ReCap = forwardRef((props, ref) => {
         fontWeight="700"
         fontSize={{ base: "1.75rem", md: "2.25rem" }}
       >
-        A RECAP OF CITYSERVE 2024
+        {translations[language].recap.title}
       </Text>
 
       <Text
@@ -62,11 +66,7 @@ const ReCap = forwardRef((props, ref) => {
         textAlign={{ base: "left", md: "center", lg: "center" }}
         px={{ base: "0rem", md: "5rem", lg: "8rem" }}
       >
-        The 2024 CityServe took place on Sunday, March 17th. Churches,
-        organizations, and participants came together to serve the different
-        needs of the city. Below are the stats of impact. Check out the video to
-        learn more about what happened and how we saw God’s love demonstrated
-        throughout the city!
+        {translations[language].recap.description}
       </Text>
 
       <Stack

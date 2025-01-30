@@ -8,8 +8,12 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
+import { useLanguage } from "./LanguageToggle";
+import translations from "./Translation";
 
 const PartnersSection = () => {
+  const { language } = useLanguage();
+
   const PartnerDisplayBox = (imagePath, title) => {
     return (
       <Box
@@ -86,15 +90,25 @@ const PartnersSection = () => {
             textTransform={"uppercase"}
             fontFamily="'Antonio', sans-serif"
           >
-            Our Partners
+            {translations[language].partners.title}
           </Text>
           <Text
             fontWeight={400}
             fontSize={{ base: "0.875rem", md: "1.25rem" }}
             fontFamily="'Manrope', sans-serif"
+            display={language === "en" ? "block" : "none"}
           >
-            Organizations and ministries that partnered with us during{" "}
+            {translations[language].partners.description}{" "}
             <strong>CityServe 2024</strong>.
+          </Text>
+          <Text
+            fontWeight={400}
+            fontSize={{ base: "0.875rem", md: "1.25rem" }}
+            fontFamily="'Manrope', sans-serif"
+            display={language === "zh" ? "block" : "none"}
+          >
+            在<strong>CityServe 2024</strong>
+            {translations[language].partners.description}
           </Text>
         </VStack>
         <Flex

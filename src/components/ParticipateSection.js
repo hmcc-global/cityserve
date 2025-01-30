@@ -12,8 +12,12 @@ import {
   TabPanel,
   Divider,
 } from "@chakra-ui/react";
+import { useLanguage } from "./LanguageToggle";
+import translations from "./Translation";
 
 const ParticipateSection = forwardRef((props, ref) => {
+  const { language } = useLanguage();
+
   const InfoBox = (iconPath, title, subtitle, description, subdescription) => {
     return (
       <Box
@@ -106,7 +110,7 @@ const ParticipateSection = forwardRef((props, ref) => {
           maxW={{ base: "100%", lg: "35%" }}
           fontFamily="'Antonio', sans-serif"
         >
-          How can YOU take part in CityServe this year?
+          {translations[language].participate.howTo}
         </Text>
         <Text
           fontWeight={400}
@@ -114,8 +118,7 @@ const ParticipateSection = forwardRef((props, ref) => {
           fontFamily="'Manrope', sans-serif"
           maxW={{ base: "100%", lg: "45%" }}
         >
-          Whether you’re a church, an NGO, or charity, we have various avenues
-          to have you take part in CityServe.
+          {translations[language].participate.avenues}
         </Text>
       </Box>
 
@@ -144,7 +147,7 @@ const ParticipateSection = forwardRef((props, ref) => {
               fontFamily={"Manrope, sans-serif"}
               letterSpacing={"0.12rem"}
             >
-              FOR CHURCHES
+              {translations[language].participate.forChurches}
             </Tab>
             <Tab
               _selected={{ color: "#F9EEE3", bg: "#183B5D" }}
@@ -158,7 +161,7 @@ const ParticipateSection = forwardRef((props, ref) => {
               fontFamily={"Manrope, sans-serif"}
               letterSpacing={"0.12rem"}
             >
-              FOR NGOS / CHARITY
+              {translations[language].participate.forNGOs}
             </Tab>
           </TabList>
           <TabPanels>
@@ -179,8 +182,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                   textAlign={"center"}
                   letterSpacing={"0.12rem"}
                 >
-                  you may choose from the below 3 CITYSERVE MODEs to join in the
-                  movement:
+                  {translations[language].participate.chooseMode}
                 </Text>
                 <Box
                   display={"flex"}
@@ -192,23 +194,23 @@ const ParticipateSection = forwardRef((props, ref) => {
                 >
                   {InfoBox(
                     "participant.svg",
-                    "Participant",
+                    translations[language].participate.participant,
                     "",
-                    "Invite your members or small groups to join in a pre-planned event organized by CityServe Planning Committee. These members will be joined by participants from other churches to serve one of 10 social categories."
+                    translations[language].participate.participantDescription
                   )}
                   {CustomDivider()}
                   {InfoBox(
                     "partner.svg",
-                    "partner",
+                    translations[language].participate.partner,
                     "",
-                    "CityServe Planning Committee will partner with your church to plan an event for your congregation. Connections and resources will be shared to empower your congregation for a serving experience during CityServe."
+                    translations[language].participate.partnerDescription
                   )}
                   {CustomDivider()}
                   {InfoBox(
                     "planner.svg",
-                    "Planner",
+                    translations[language].participate.planner,
                     "",
-                    "Plan within your church to create your own CityServe event with your network and connections to be a part of the movement."
+                    translations[language].participate.plannerDescription
                   )}
                 </Box>
               </Box>
@@ -230,7 +232,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                   textAlign={"center"}
                   letterSpacing={"0.12rem"}
                 >
-                  If you are an ngo or charity, you can:
+                  {translations[language].participate.ifNGOs}
                 </Text>
                 <Box
                   display={"flex"}
@@ -242,25 +244,25 @@ const ParticipateSection = forwardRef((props, ref) => {
                 >
                   {InfoBox(
                     "engage.svg",
-                    "Engage",
+                    translations[language].participate.engage,
                     "",
-                    "Engage with the needy by loving the city through different existing initiatives and activities.",
+                    translations[language].participate.engageDescription,
                     ""
                   )}
                   {CustomDivider()}
                   {InfoBox(
                     "empower.svg",
-                    "Empower",
+                    translations[language].participate.empower,
                     "",
-                    "Empower churches and ministries by providing participants a platform to serve the city together.",
+                    translations[language].participate.empowerDescription,
                     ""
                   )}
                   {CustomDivider()}
                   {InfoBox(
                     "exhibit.svg",
-                    "Exhibit",
+                    translations[language].participate.exhibit,
                     "",
-                    "Exhibit the work your organization is engaged in, educate participants on the needs in the city and respective impact to the society.",
+                    translations[language].participate.exhibitDescription,
                     ""
                   )}
                 </Box>
