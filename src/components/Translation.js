@@ -29,10 +29,10 @@ const translations = {
       domesticIssues: "DOMESTIC ISSUES",
       elderly: "ELDERLY",
       ethnicMinorities: "ETHNIC MINORITIES",
-      handicapped: "HANDICAPPED & DISABLED",
-      environmental: "ENVIRONMENTAL",
+      handicapped: "PEOPLE WITH DISABILITIES",
+      environmental: "CREATION CARE",
       poor: "POOR & HOMELESS",
-      mentalHealth: "MENTAL HEALTH",
+      mentalHealth: "MENTAL HEALTH ISSUES",
       lowIncome: "LOW INCOME FAMILIES",
     },
     joinUs: {

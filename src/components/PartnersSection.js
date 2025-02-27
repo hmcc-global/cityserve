@@ -92,7 +92,7 @@ const PartnersSection = () => {
           >
             {translations[language].partners.title}
           </Text>
-          <Text
+          {/* <Text
             fontWeight={400}
             fontSize={{ base: "0.875rem", md: "1.25rem" }}
             fontFamily="'Manrope', sans-serif"
@@ -100,8 +100,8 @@ const PartnersSection = () => {
           >
             {translations[language].partners.description}{" "}
             <strong>CityServe 2024</strong>.
-          </Text>
-          <Text
+          </Text> */}
+          {/* <Text
             fontWeight={400}
             fontSize={{ base: "0.875rem", md: "1.25rem" }}
             fontFamily="'Manrope', sans-serif"
@@ -109,7 +109,7 @@ const PartnersSection = () => {
           >
             在<strong>CityServe 2024</strong>
             {translations[language].partners.description}
-          </Text>
+          </Text> */}
         </VStack>
         <Flex
           display={{ base: "none", lg: "flex" }}
@@ -136,6 +136,12 @@ const PartnersSection = () => {
             "images/partnered_logo_5.png",
             "jesus the living god international ministry"
           )}
+          {PartnerDisplayBox("images/uu.png", "ULTIMATE UNITED")}
+          {PartnerDisplayBox("images/ksa.png", "KSA")}
+          {PartnerDisplayBox("images/principal_chan.png", "PRINCIPAL CHAN")}
+          {PartnerDisplayBox("images/wai_ji.png", "WAI JI")}
+          {PartnerDisplayBox("images/yes.png", "YES")}
+          {PartnerDisplayBox("images/ktmss.png", "KTMSS")}
         </Flex>
         <Box display={{ base: "flex", lg: "none" }} w="100%" p={0}>
           <Grid templateColumns="repeat(2, 1fr)" gap={"6"}>
@@ -174,6 +180,20 @@ const PartnersSection = () => {
                 "images/partnered_logo_5.png",
                 "jesus the living god international ministry"
               )}
+            </GridItem>
+            <GridItem>
+              {PartnerDisplayBox("images/uu.png", "ultimate united")}
+            </GridItem>
+            <GridItem>{PartnerDisplayBox("images/ksa.png", "KSA")}</GridItem>
+            <GridItem>
+              {PartnerDisplayBox("images/principal_chan.png", "principal chan")}
+            </GridItem>
+            <GridItem>
+              {PartnerDisplayBox("images/wai_ji.png", "wai ji")}
+            </GridItem>
+            <GridItem>{PartnerDisplayBox("images/yes.png", "yes")}</GridItem>
+            <GridItem>
+              {PartnerDisplayBox("images/ktmss.png", "ktmss")}
             </GridItem>
           </Grid>
         </Box>
