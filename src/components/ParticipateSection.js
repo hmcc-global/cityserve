@@ -141,9 +141,11 @@ const ParticipateSection = forwardRef((props, ref) => {
               flex={0.5}
               fontSize={{ base: "0.875rem", md: "1rem" }}
               py={"0.75rem"}
+              // px={"0.2rem"}
               fontWeight={800}
               fontFamily={"Manrope, sans-serif"}
-              letterSpacing={"0.12rem"}
+              letterSpacing={"0.1rem"}
+              width={"33%"}
             >
               {translations[language].participate.forIndividuals}
             </Tab>
@@ -157,7 +159,9 @@ const ParticipateSection = forwardRef((props, ref) => {
               py={"0.75rem"}
               fontWeight={800}
               fontFamily={"Manrope, sans-serif"}
-              letterSpacing={"0.12rem"}
+              letterSpacing={"0.1rem"}
+              width={"33%"}
+
             >
               {translations[language].participate.forChurches}
             </Tab>
@@ -171,7 +175,9 @@ const ParticipateSection = forwardRef((props, ref) => {
               py={"0.75rem"}
               fontWeight={800}
               fontFamily={"Manrope, sans-serif"}
-              letterSpacing={"0.12rem"}
+              letterSpacing={"0.1rem"}
+              width={"33%"}
+
             >
               {translations[language].participate.forNGOs}
             </Tab>
