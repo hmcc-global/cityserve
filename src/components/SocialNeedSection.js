@@ -17,7 +17,7 @@ const SocialNeedSection = () => {
         borderColor="#F8F8F8"
         p={{ base: "0.3rem", lg: "0.3rem", xl: "1rem" }}
         w={"100%"}
-        h={{ base: "30vw", md: "22.5vw", lg: "16vw" }}
+        h={{ base: "15rem", md: "13rem", lg: "15rem" }}
         bgColor={color}
       >
         <Image

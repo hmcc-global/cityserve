@@ -37,7 +37,7 @@ const Footer = () => {
             fontFamily="'Manrope', sans-serif"
             fontWeight="400"
           >
-            © 2023-2024 Cityserve Hong Kong. All Rights Reserved.
+            © 2023-2025 Cityserve Hong Kong. All Rights Reserved.
           </Text>
           <Box
             display={"flex"}
@@ -76,9 +76,9 @@ const Footer = () => {
                 fontFamily="'Manrope', sans-serif"
                 fontWeight="400"
                 wordBreak="break-word"
-                href="mailto:cityserve@hongkong.hmcc.net"
+                href="mailto:admin@cityservehk.org"
               >
-                cityserve@hongkong.hmcc.net
+                admin@cityservehk.org
               </Link>
             </HStack>
           </Box>

@@ -70,7 +70,7 @@ const Header = ({ recapRef, joinusRef }) => {
             textColor="#F8F8F8"
             fontSize="1rem"
             fontWeight="800"
-            href="https://forms.gle/UoAwhzPYqgkUsdcf6"
+            href="https://forms.gle/YREGhDijBayQaEea8"
             as={Link}
             _hover={{ bg: "#183B5D", textDecor: "none" }}
             target="_blank"
@@ -83,11 +83,7 @@ const Header = ({ recapRef, joinusRef }) => {
         </HStack>
 
         {/* Mobile version */}
-        <HStack
-          display={{ base: "flex", lg: "none" }}
-          w="25%"
-          justifyContent="end"
-        >
+        <HStack display={{ base: "flex", lg: "none" }} w="25%" justifyContent="end">
           <Button
             backgroundColor="transparent"
             onClick={toggleDropdown}

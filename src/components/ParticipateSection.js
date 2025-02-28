@@ -11,6 +11,9 @@ import {
   TabPanels,
   TabPanel,
   Divider,
+  VStack,
+  Link,
+  Button,
 } from "@chakra-ui/react";
 import { useLanguage } from "./LanguageToggle";
 import translations from "./Translation";
@@ -129,12 +132,21 @@ const ParticipateSection = forwardRef((props, ref) => {
         borderRadius={{ base: 0, lg: "2rem" }}
       >
         <Tabs variant="unstyled" width="100%">
-          <TabList
-            width={"100%"}
-            p={"0.25rem"}
-            bg={"#FFFFFF"}
-            borderRadius={"0.625rem"}
-          >
+          <TabList width={"100%"} p={"0.25rem"} bg={"#FFFFFF"} borderRadius={"0.625rem"}>
+            <Tab
+              _selected={{ color: "#F9EEE3", bg: "#183B5D" }}
+              borderRadius="0.625rem"
+              color={"#183B5D"}
+              textTransform={"uppercase"}
+              flex={0.5}
+              fontSize={{ base: "0.875rem", md: "1rem" }}
+              py={"0.75rem"}
+              fontWeight={800}
+              fontFamily={"Manrope, sans-serif"}
+              letterSpacing={"0.12rem"}
+            >
+              {translations[language].participate.forIndividuals}
+            </Tab>
             <Tab
               _selected={{ color: "#F9EEE3", bg: "#183B5D" }}
               borderRadius="0.625rem"
@@ -165,6 +177,75 @@ const ParticipateSection = forwardRef((props, ref) => {
             </Tab>
           </TabList>
           <TabPanels>
+            <TabPanel>
+              <Box
+                display="flex"
+                flexDir="column"
+                alignItems={"center"}
+                justifyContent={"center"}
+                mt={"1.25rem"}
+                gap={{ base: "1.5rem", lg: "2rem" }}
+              >
+                <VStack w="100%" gap={10}>
+                  <VStack gap={"2rem"} marginX={{ base: "1.25rem" }}>
+                    <Text
+                      fontFamily="Manrope"
+                      fontSize={{ base: "0.875rem", md: "1.25rem" }}
+                      fontWeight="400"
+                      textAlign="center"
+                    >
+                      {translations[language].joinUs.description}
+                      &nbsp;
+                      <Link
+                        href="https://linktr.ee/cityservehk"
+                        target="_blank"
+                        variant="underline"
+                        fontWeight="700"
+                        textDecoration="underline"
+                      >
+                        {translations[language].joinUs.link}
+                      </Link>
+                      .
+                    </Text>
+                  </VStack>
+
+                  <Button
+                    bgColor="#183B5D"
+                    textColor="white"
+                    fontFamily="Manrope"
+                    fontWeight="900"
+                    fontSize={{ base: "0.875rem", lg: "1rem" }}
+                    letterSpacing="0.12rem"
+                    textAlign="center"
+                    borderRadius="0.625rem"
+                    height="3.125rem"
+                    width="17.5rem"
+                    as={Link}
+                    target="_blank"
+                    href="https://forms.gle/YREGhDijBayQaEea8"
+                    sx={{
+                      _hover: {
+                        textDecoration: "none",
+                        bg: "#1769B8", // Background color on hover
+                        color: "white", // Text color on hover
+                      },
+                    }}
+                  >
+                    {translations[language].interestForm}
+                  </Button>
+                </VStack>
+                {/* <Text
+                  textTransform={"uppercase"}
+                  fontSize={{ base: "0.875rem", md: "1rem" }}
+                  fontFamily={"Manrope, sans-serif"}
+                  fontWeight="800"
+                  textAlign={"center"}
+                  letterSpacing={"0.12rem"}
+                >
+                  {translations[language].participate.chooseMode}
+                </Text> */}
+              </Box>
+            </TabPanel>
             <TabPanel>
               <Box
                 display="flex"

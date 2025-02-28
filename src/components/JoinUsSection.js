@@ -73,10 +73,10 @@ const JoinUsSection = forwardRef((props, ref) => {
           textAlign="center"
           borderRadius="0.625rem"
           height="3.125rem"
-          width="16.25rem"
+          width="17.5rem"
           as={Link}
           target="_blank"
-          href="https://forms.gle/UoAwhzPYqgkUsdcf6"
+          href="https://forms.gle/YREGhDijBayQaEea8"
           sx={{
             _hover: {
               textDecoration: "none",

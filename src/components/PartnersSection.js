@@ -1,13 +1,4 @@
-import {
-  Text,
-  VStack,
-  Image,
-  Container,
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Text, VStack, Container, Box, Flex, Grid, GridItem } from "@chakra-ui/react";
 import { useLanguage } from "./LanguageToggle";
 import translations from "./Translation";
 
@@ -27,22 +18,20 @@ const PartnersSection = () => {
         boxShadow="0px 0px 3px 0px rgba(0, 0, 0, 0.2)"
         px="1rem"
         py="1.25rem"
-        w={{ base: "42.5vw", lg: "17.5vw", xl: "15vw" }}
+        w={{ base: "10  0%", lg: "30%", xl: "20%" }}
         minH={"100%"}
       >
         <Grid templateRows="repeat(2, 1fr)" gap={"1rem"} w="100%">
-          <GridItem display="flex" justifyContent="center">
-            <Image
-              src={process.env.PUBLIC_URL + imagePath}
-              minH="6rem"
-              maxH="6rem"
-            />
-          </GridItem>
           <GridItem
             display="flex"
             justifyContent="center"
-            alignItems={"center"}
-          >
+            h="6rem"
+            bgImage={process.env.PUBLIC_URL + imagePath}
+            bgSize="contain"
+            bgPosition="center"
+            bgRepeat="no-repeat"
+          ></GridItem>
+          <GridItem display="flex" justifyContent="center" alignItems={"center"}>
             <Text
               fontWeight={800}
               fontSize={{ base: "0.875rem", md: "1rem" }}
@@ -81,7 +70,7 @@ const PartnersSection = () => {
           textColor="#183B5D"
           w="100%"
           gap="1rem"
-          width={{ base: "100%", lg: "15vw" }}
+          width={{ base: "100%", md: "15%", lg: "15%" }}
           alignItems="flex-start"
         >
           <Text
@@ -120,36 +109,36 @@ const PartnersSection = () => {
           gap={"1rem"}
           maxW="100%"
         >
-          {PartnerDisplayBox(
-            "images/partnered_logo_2.png",
-            "INNER CITY MINISTRIES"
-          )}
+          {PartnerDisplayBox("images/one-htw.avif", "ONE CAMPAIGN")}
           {PartnerDisplayBox(
             "images/partnered_logo_3.png",
-            "hong kong church network for the poor"
+            "HONG KONG CHURCH NETWORK FOR THE POOR"
           )}
-          {PartnerDisplayBox("images/christian_action.png", "christian action")}
+          {PartnerDisplayBox("images/christian_action.png", "CHRISTIAN ACTION")}
           {PartnerDisplayBox("images/manna.png", "MANNA MINISTRY")}
           {PartnerDisplayBox("images/mothers_choice.png", "MOTHER'S CHOICE")}
           {PartnerDisplayBox("images/s&d.png", "SONS & DAUGHTER HK")}
-          {PartnerDisplayBox(
+          {/* {PartnerDisplayBox(
             "images/partnered_logo_5.png",
             "jesus the living god international ministry"
-          )}
+          )} */}
           {PartnerDisplayBox("images/uu.png", "ULTIMATE UNITED")}
-          {PartnerDisplayBox("images/ksa.png", "KSA")}
-          {PartnerDisplayBox("images/principal_chan.png", "PRINCIPAL CHAN")}
-          {PartnerDisplayBox("images/wai_ji.png", "WAI JI")}
-          {PartnerDisplayBox("images/yes.png", "YES")}
-          {PartnerDisplayBox("images/ktmss.png", "KTMSS")}
+          {PartnerDisplayBox(
+            "images/ksa.png",
+            "THE HONG KONG CHRISTIAN KUN SUN ASSOCIATION"
+          )}
+          {PartnerDisplayBox(
+            "images/principal_chan.png",
+            "PRINCIPAL CHAN FREE TUTORIAL WORLD"
+          )}
+          {PartnerDisplayBox("images/wai-ji.png", "WAI JI CHRISTIAN SERVICE")}
+          {PartnerDisplayBox("images/logo-yes.png", "YOUTH EMPOWERMENT SERVICE")}
+          {PartnerDisplayBox("images/partnered_logo_2.png", "INNER CITY MINISTRIES")}
         </Flex>
         <Box display={{ base: "flex", lg: "none" }} w="100%" p={0}>
           <Grid templateColumns="repeat(2, 1fr)" gap={"6"}>
             <GridItem>
-              {PartnerDisplayBox(
-                "images/partnered_logo_2.png",
-                "INNER CITY MINISTRIES"
-              )}
+              {PartnerDisplayBox("images/partnered_logo_2.png", "INNER CITY MINISTRIES")}
             </GridItem>
             <GridItem>
               {PartnerDisplayBox(
@@ -158,19 +147,11 @@ const PartnersSection = () => {
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox(
-                "images/christian_action.png",
-                "christian action"
-              )}
+              {PartnerDisplayBox("images/christian_action.png", "christian action")}
             </GridItem>
+            <GridItem>{PartnerDisplayBox("images/manna.png", "MANNA MINISTRY")}</GridItem>
             <GridItem>
-              {PartnerDisplayBox("images/manna.png", "MANNA MINISTRY")}
-            </GridItem>
-            <GridItem>
-              {PartnerDisplayBox(
-                "images/mothers_choice.png",
-                "MOTHER'S CHOICE"
-              )}
+              {PartnerDisplayBox("images/mothers_choice.png", "MOTHER'S CHOICE")}
             </GridItem>
             <GridItem>
               {PartnerDisplayBox("images/s&d.png", "SONS & DAUGHTER HK")}
@@ -181,20 +162,14 @@ const PartnersSection = () => {
                 "jesus the living god international ministry"
               )}
             </GridItem>
-            <GridItem>
-              {PartnerDisplayBox("images/uu.png", "ultimate united")}
-            </GridItem>
+            <GridItem>{PartnerDisplayBox("images/uu.png", "ultimate united")}</GridItem>
             <GridItem>{PartnerDisplayBox("images/ksa.png", "KSA")}</GridItem>
             <GridItem>
               {PartnerDisplayBox("images/principal_chan.png", "principal chan")}
             </GridItem>
-            <GridItem>
-              {PartnerDisplayBox("images/wai_ji.png", "wai ji")}
-            </GridItem>
+            <GridItem>{PartnerDisplayBox("images/wai_ji.png", "wai ji")}</GridItem>
             <GridItem>{PartnerDisplayBox("images/yes.png", "yes")}</GridItem>
-            <GridItem>
-              {PartnerDisplayBox("images/ktmss.png", "ktmss")}
-            </GridItem>
+            <GridItem>{PartnerDisplayBox("images/ktmss.png", "ktmss")}</GridItem>
           </Grid>
         </Box>
       </Box>

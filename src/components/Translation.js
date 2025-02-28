@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    interestForm: "2025 INTEREST FORM",
+    interestForm: "2025 REGISTRATION FORM",
     header: {
       recap: "2024 RECAP",
       participate: "PARTICIPATE",
@@ -38,7 +38,7 @@ const translations = {
     joinUs: {
       title: "Join us in Cityserve 2025",
       description:
-        "If you would like to take part in CityServe 2025 or if you have any questions, indicate your interest in the form below or contact us ",
+        "If you would like to take part in CityServe 2025 or if you have any questions, sign up in the form below or contact us ",
       link: "here",
     },
     recap: {
@@ -54,6 +54,7 @@ const translations = {
       howTo: "How can YOU take part in CityServe this year?",
       avenues:
         "Whether you’re a church, an NGO, or charity, we have various avenues to have you take part in CityServe.",
+      forIndividuals: "FOR INDIVIDUALS",
       forChurches: "FOR CHURCHES",
       chooseMode:
         "you may choose from the below 3 CITYSERVE MODEs to join in the movement:",
@@ -88,7 +89,7 @@ const translations = {
       recap: "2024 回顧",
       participate: "參與",
     },
-    interestForm: "CityServe 2025 意向表格",
+    interestForm: "CityServe 2025 註冊問卷",
     about: {
       date: "2025年 4月4-6日",
       mission_1: "以",
@@ -122,7 +123,7 @@ const translations = {
     joinUs: {
       title: "一同參與CityServe2025",
       description:
-        "如果您想參加CityServe 2025或有任何問題，請在下方的表格中表達您的意願，或在此與我們聯繫。",
+        "如果您想參加 CityServe 2025 或有任何疑問，請在下面的表格中報名或聯絡我們.",
       link: "聯繫我們",
     },
     recap: {
@@ -138,7 +139,8 @@ const translations = {
       howTo: "你能如何參與今年的CityServe?",
       avenues:
         "無論您是教會、非政府組織還是慈善機構，我們都有多種途徑讓您參與CityServe。",
-      forChurches: "如果你代表教會:",
+      forIndividuals: "個人",
+      forChurches: "教會",
       chooseMode: "可以選擇以下其中一個方式參與CityServe:",
       participant: "參與者",
       participantDescription:
@@ -149,7 +151,7 @@ const translations = {
       planner: "策劃者",
       plannerDescription:
         "透過您已經具有的人脈和資源來創建您自己的CityServe活動，成為這運動的一部分。",
-      forNGOs: "如果你代表慈善組織和機構：",
+      forNGOs: "慈善組織和機構",
       ifNGOs: "如果你是慈善機構，你可以：",
       engage: "參與服務",
       engageDescription: "通過已經預設的活動服務有需要的人群，關懷我們的城市。",
