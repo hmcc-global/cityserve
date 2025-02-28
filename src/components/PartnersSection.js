@@ -138,7 +138,7 @@ const PartnersSection = () => {
         <Box display={{ base: "flex", lg: "none" }} w="100%" p={0}>
           <Grid templateColumns="repeat(2, 1fr)" gap={"6"}>
             <GridItem>
-              {PartnerDisplayBox("images/partnered_logo_2.png", "INNER CITY MINISTRIES")}
+              {PartnerDisplayBox("images/one-htw.avif", "ONE CAMPAIGN")}
             </GridItem>
             <GridItem>
               {PartnerDisplayBox(
@@ -162,14 +162,21 @@ const PartnersSection = () => {
                 "jesus the living god international ministry"
               )}
             </GridItem>
-            <GridItem>{PartnerDisplayBox("images/uu.png", "ultimate united")}</GridItem>
-            <GridItem>{PartnerDisplayBox("images/ksa.png", "KSA")}</GridItem>
-            <GridItem>
-              {PartnerDisplayBox("images/principal_chan.png", "principal chan")}
+            <GridItem>{PartnerDisplayBox("images/uu.png", "ULTIMATE UNITED")}</GridItem>
+            <GridItem>{PartnerDisplayBox(
+                        "images/ksa.png",
+                        "THE HONG KONG CHRISTIAN KUN SUN ASSOCIATION"
+                      )}
             </GridItem>
-            <GridItem>{PartnerDisplayBox("images/wai_ji.png", "wai ji")}</GridItem>
-            <GridItem>{PartnerDisplayBox("images/yes.png", "yes")}</GridItem>
-            <GridItem>{PartnerDisplayBox("images/ktmss.png", "ktmss")}</GridItem>
+            <GridItem>
+            {PartnerDisplayBox(
+              "images/principal_chan.png",
+              "PRINCIPAL CHAN FREE TUTORIAL WORLD"
+            )}
+            </GridItem>
+            <GridItem>{PartnerDisplayBox("images/wai-ji.png", "WAI JI CHRISTIAN SERVICE")}</GridItem>
+            <GridItem>{PartnerDisplayBox("images/logo-yes.png", "YOUTH EMPOWERMENT SERVICE")}</GridItem>
+            <GridItem>{PartnerDisplayBox("images/partnered_logo_2.png", "INNER CITY MINISTRIES")}</GridItem>
           </Grid>
         </Box>
       </Box>
