@@ -32,9 +32,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
       <VStack w="100%" gap="0" bgColor="#183B5D" mt={{ base: "9vh", md: "0" }}>
         <Box
           backgroundImage={{
-            base: `url(${
-              process.env.PUBLIC_URL + "/images/cityserve_bg_mobile.png"
-            })`,
+            base: `url(${process.env.PUBLIC_URL + "/images/cityserve_bg_mobile.png"})`,
             lg: `url(${process.env.PUBLIC_URL + "/images/cityserve_bg.jpg"})`,
           }}
           backgroundPosition={{ base: "bottom", lg: "center" }}
@@ -136,10 +134,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
               textColor="#183B5D"
               gap={{ base: "1rem", md: "2rem" }}
             >
-              <Text
-                fontSize={{ base: "1.75rem", md: "2.5rem" }}
-                marginBottom="3"
-              >
+              <Text fontSize={{ base: "1.75rem", md: "2.5rem" }} marginBottom="3">
                 {translations[language].about.date}
               </Text>
               <Text fontSize={{ base: "2rem", md: "2.75rem" }}>
@@ -160,7 +155,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 textColor="#F8F8F8"
                 fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontWeight="800"
-                href="https://forms.gle/UoAwhzPYqgkUsdcf6"
+                href="https://forms.gle/YREGhDijBayQaEea8"
                 as={Link}
                 target="_blank"
                 _hover={{ bg: "#183B5D", textDecor: "none" }}
@@ -206,11 +201,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
           </VStack>
         </Box>
 
-        <VStack
-          pb={{ base: "5", sm: "10" }}
-          paddingTop="1rem"
-          fontFamily="Manrope"
-        >
+        <VStack pb={{ base: "5", sm: "10" }} paddingTop="1rem" fontFamily="Manrope">
           {/* Desktop version */}
           <HStack
             w="100%"

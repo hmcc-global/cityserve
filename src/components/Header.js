@@ -126,7 +126,7 @@ const Header = ({ recapRef, joinusRef }) => {
           textColor="#F8F8F8"
           fontSize={{ base: "0.7rem", md: "1rem" }}
           fontWeight="800"
-          href="https://forms.gle/UoAwhzPYqgkUsdcf6"
+          href="https://forms.gle/YREGhDijBayQaEea8"
           as={Link}
           target="_blank"
           borderRadius="0.7rem"
