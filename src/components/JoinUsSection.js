@@ -188,8 +188,8 @@ const JoinUsSection = forwardRef((props, ref) => {
                       <Text fontStyle="italic">
                         &bull; If you are paying via <b>bank transfer or FPS</b>{" "}
                         please leave a note in the transfer remark in the
-                        following format: CityServe: [FULLNAME]. If you are
-                        paying via credit card on
+                        following format: CityServe. If you are paying via
+                        credit card on
                         <br />
                         &bull;Tithe.ly, the system will include a{" "}
                         <b>3.5% additional processing fee</b> for the
