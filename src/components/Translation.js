@@ -39,6 +39,8 @@ const translations = {
       title: "Join us in Cityserve 2025",
       description:
         "If you would like to take part in CityServe 2025 or if you have any questions, sign up in the form below or contact us ",
+      button_registration: "REGISTRATION FORM",
+      button_giving: "GIVE TO CITYSERVE",
       link: "here",
     },
     recap: {
