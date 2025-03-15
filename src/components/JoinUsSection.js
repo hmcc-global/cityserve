@@ -81,8 +81,11 @@ const JoinUsSection = forwardRef((props, ref) => {
             .
           </Text>
         </VStack>
-        <Flex w="100%" justifyContent="center" gap={{ base: "5", md: "9" }}>
-          <Stack direction={{ base: "column", md: "row" }}>
+        <Flex w="100%" justifyContent="center">
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            gap={{ base: "4", md: "9" }}
+          >
             <Button
               bgColor="#DAEDFA"
               textColor="#183B5D"
