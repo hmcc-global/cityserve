@@ -126,6 +126,8 @@ const translations = {
       title: "一同參與CityServe2025",
       description:
         "如果您想參加 CityServe 2025 或有任何疑問，請在下面的表格中報名或聯絡我們.",
+      button_registration: "註冊問卷",
+      button_giving: "CityServe 奉獻",
       link: "聯繫我們",
     },
     recap: {
