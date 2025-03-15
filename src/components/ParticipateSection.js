@@ -127,12 +127,17 @@ const ParticipateSection = forwardRef((props, ref) => {
 
       <Box
         py={"1.25rem"}
-        px={"1.375rem"}
+        px={{ base: "0.85rem", md: "1.375rem" }}
         bgColor={"#DAEDFA"}
         borderRadius={{ base: 0, lg: "2rem" }}
       >
         <Tabs variant="unstyled" width="100%">
-          <TabList width={"100%"} p={"0.25rem"} bg={"#FFFFFF"} borderRadius={"0.625rem"}>
+          <TabList
+            width={"100%"}
+            p={"0.25rem"}
+            bg={"#FFFFFF"}
+            borderRadius={"0.625rem"}
+          >
             <Tab
               _selected={{ color: "#F9EEE3", bg: "#183B5D" }}
               borderRadius="0.625rem"
@@ -161,7 +166,6 @@ const ParticipateSection = forwardRef((props, ref) => {
               fontFamily={"Manrope, sans-serif"}
               letterSpacing={"0.1rem"}
               width={"33%"}
-
             >
               {translations[language].participate.forChurches}
             </Tab>
@@ -177,7 +181,6 @@ const ParticipateSection = forwardRef((props, ref) => {
               fontFamily={"Manrope, sans-serif"}
               letterSpacing={"0.1rem"}
               width={"33%"}
-
             >
               {translations[language].participate.forNGOs}
             </Tab>
