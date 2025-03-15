@@ -29,10 +29,12 @@ const AboutSection = ({ recapRef, participateRef }) => {
 
   return (
     <>
-      <VStack w="100%" gap="0" bgColor="#183B5D" mt={{ base: "9vh", md: "0" }}>
+      <VStack w="100%" gap="0" bgColor="#183B5D" mt={{ base: "10vh", md: "0" }}>
         <Box
           backgroundImage={{
-            base: `url(${process.env.PUBLIC_URL + "/images/cityserve_bg_mobile.png"})`,
+            base: `url(${
+              process.env.PUBLIC_URL + "/images/cityserve_bg_mobile.png"
+            })`,
             lg: `url(${process.env.PUBLIC_URL + "/images/cityserve_bg.jpg"})`,
           }}
           backgroundPosition={{ base: "bottom", lg: "center" }}
@@ -114,12 +116,14 @@ const AboutSection = ({ recapRef, participateRef }) => {
 
           {/* Mobile version */}
           <VStack
-            minH="170vw"
+            minH="43rem"
             letterSpacing="0.01rem"
             display={{ base: "flex", lg: "none" }}
             fontFamily="Antonio"
+            marginBottom="9"
+            gap={{ base: "3rem", md: "2" }}
           >
-            <Flex justifyContent="center" h="50%">
+            <Flex justifyContent="center" h="55%">
               <Image
                 w="90%"
                 h="auto"
@@ -128,13 +132,16 @@ const AboutSection = ({ recapRef, participateRef }) => {
             </Flex>
             <VStack
               h="50%"
-              w="80%"
+              w="88%"
               alignItems="start"
               fontWeight="700"
               textColor="#183B5D"
-              gap={{ base: "1rem", md: "2rem" }}
+              gap={{ base: "0.9rem", md: "2rem" }}
             >
-              <Text fontSize={{ base: "1.75rem", md: "2.5rem" }} marginBottom="3">
+              <Text
+                fontSize={{ base: "1.75rem", md: "2.5rem" }}
+                marginBottom="3"
+              >
                 {translations[language].about.date}
               </Text>
               <Text fontSize={{ base: "2rem", md: "2.75rem" }}>
@@ -160,7 +167,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 target="_blank"
                 _hover={{ bg: "#183B5D", textDecor: "none" }}
                 fontFamily="Manrope"
-                w="70%"
+                w={{ base: "85%", md: "70%" }}
                 borderRadius="0.6rem"
                 letterSpacing="0.12em"
                 p={{ base: "1rem", md: "1.75rem" }}
@@ -201,7 +208,11 @@ const AboutSection = ({ recapRef, participateRef }) => {
           </VStack>
         </Box>
 
-        <VStack pb={{ base: "5", sm: "10" }} paddingTop="1rem" fontFamily="Manrope">
+        <VStack
+          pb={{ base: "5", sm: "10" }}
+          paddingTop="1rem"
+          fontFamily="Manrope"
+        >
           {/* Desktop version */}
           <HStack
             w="100%"
