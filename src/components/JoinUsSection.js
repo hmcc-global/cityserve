@@ -196,8 +196,7 @@ const JoinUsSection = forwardRef((props, ref) => {
                         <br />
                         &bull;Tithe.ly, the system will include a{" "}
                         <b>3.5% additional processing fee</b> for the
-                        transaction so your total cost may be different than the
-                        listed registration price.
+                        transaction so your total giving may be different.
                       </Text>
                     </VStack>
                   </Box>
