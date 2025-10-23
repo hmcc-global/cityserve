@@ -1,12 +1,12 @@
 const translations = {
   en: {
-    interestForm: "2025 REGISTRATION FORM",
+    interestForm: "2026 REGISTRATION FORM",
     header: {
-      recap: "2024 RECAP",
+      recap: "2025 RECAP",
       participate: "PARTICIPATE",
     },
     about: {
-      date: "APRIL 4-6, 2025",
+      date: "2026",
       mission_1: "TO BE A",
       mission_highlight_1: "VISIBLE DISPLAY",
       mission_and: "AND",
@@ -18,7 +18,7 @@ const translations = {
         "CityServe Hong Kong is a city-wide movement for local churches united in their mission to serve communities across Hong Kong and to demonstrate God’s love for the city.",
       description_2:
         "CityServe aspires to be a transformative movement that connects churches and local NGOs & charitable organizations each year on a designated weekend. We aim to serve as our expression of worship. Our mission is to be witnesses of God’s love by actively loving and serving the poor, marginalized, and unreached individuals in Hong Kong. Through our collective efforts, we hope to inspire the city to take notice and proclaim the good news through our acts of service, fostering a community rooted in compassion and hope.",
-      recap: "CHECK OUT WHAT HAPPENED IN CITYSERVE 2024",
+      recap: "CHECK OUT WHAT HAPPENED IN CITYSERVE 2025",
     },
     socialNeed: {
       title: "serving the social needs of HK",
@@ -36,17 +36,17 @@ const translations = {
       lowIncome: "LOW INCOME FAMILIES",
     },
     joinUs: {
-      title: "Join us in Cityserve 2025",
+      title: "Join us in Cityserve 2026",
       description:
-        "If you would like to take part in CityServe 2025 or if you have any questions, sign up in the form below or contact us ",
+        "If you would like to take part in CityServe 2026 or if you have any questions, sign up in the form below or contact us ",
       button_registration: "REGISTRATION FORM",
       button_giving: "GIVE TO CITYSERVE",
       link: "here",
     },
     recap: {
-      title: "A RECAP OF CITYSERVE 2024",
+      title: "A RECAP OF CITYSERVE 2025",
       description:
-        "The 2024 CityServe took place on Sunday, March 17th. Churches, organizations, and participants came together to serve the different needs of the city. Below are the stats of impact. Check out the video to learn more about what happened and how we saw God’s love demonstrated throughout the city!",
+        "The 2025 CityServe took place on Sunday, April 4-6th. Churches, organizations, and participants came together to serve the different needs of the city. Below are the stats of impact. Check out the video to learn more about what happened and how we saw God’s love demonstrated throughout the city!",
       participants: "PARTICIPANTS",
       churches: "CHURCHES",
       ngos: "NGOs",
@@ -88,12 +88,12 @@ const translations = {
   },
   zh: {
     header: {
-      recap: "2024 回顧",
+      recap: "2025 回顧",
       participate: "參與",
     },
-    interestForm: "CityServe 2025 註冊問卷",
+    interestForm: "CityServe 2026 註冊問卷",
     about: {
-      date: "2025年 4月4-6日",
+      date: "2026年",
       mission_1: "以",
       mission_highlight_1: "具體的服務",
       mission_and: "和",
@@ -105,8 +105,8 @@ const translations = {
         "CityServe是服務香港全市的一項活動，希望與當地教會和組織合作，一起以具體的方式表達上帝的愛。",
       description_2:
         "CityServe 的願景是啟動一個轉變城市的運動，旨在每年在指定的週末連接教會和當地慈善組織機構。我們的目標是將服務作為我們崇拜的表達。我們的使命是透過實際行動關愛和服務香港的貧困、邊緣化及未接觸的個體，見證上帝的愛。通過我們的共同努力，我們希望激勵城市注意到我們的服務行動，並傳揚好消息，培養根植於同情和希望的社區。",
-      interestForm: "CityServe 2025 意向表格",
-      recap: "看看2024年 CityServe 的回顧影片",
+      interestForm: "CityServe 2026 意向表格",
+      recap: "看看2025年 CityServe 的回顧影片",
     },
     socialNeed: {
       title: "服務香港的社會需求",
@@ -123,17 +123,17 @@ const translations = {
       lowIncome: "低收入家庭",
     },
     joinUs: {
-      title: "一同參與CityServe2025",
+      title: "一同參與CityServe2026",
       description:
-        "如果您想參加 CityServe 2025 或有任何疑問，請在下面的表格中報名或聯絡我們.",
+        "如果您想參加 CityServe 2026 或有任何疑問，請在下面的表格中報名或聯絡我們.",
       button_registration: "註冊問卷",
       button_giving: "CityServe 奉獻",
       link: "聯繫我們",
     },
     recap: {
-      title: "回顧2024年CityServe",
+      title: "回顧2025年CityServe",
       description:
-        "2024 年的 CityServe 於3月17日星期日舉行。不同教會、慈善組織和參加者共聚一堂，服務城市中不同的需求。以下是我們蒐集的影響力統計。請收看我們的視頻以了解我們所經歷的一切以及參加者如何見證上帝的愛被彰顯在香港居民當中！",
+        "2025 年的 CityServe 於4月4-6日星期日舉行。不同教會、慈善組織和參加者共聚一堂，服務城市中不同的需求。以下是我們蒐集的影響力統計。請收看我們的視頻以了解我們所經歷的一切以及參加者如何見證上帝的愛被彰顯在香港居民當中！",
       participants: "參加者",
       churches: "教會",
       ngos: "慈善組織",
