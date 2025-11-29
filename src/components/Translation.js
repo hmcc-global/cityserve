@@ -6,7 +6,7 @@ const translations = {
       participate: "PARTICIPATE",
     },
     about: {
-      date: "2026",
+      date: "MARCH 20-22, 2026",
       mission_1: "TO BE A",
       mission_highlight_1: "VISIBLE DISPLAY",
       mission_and: "AND",
@@ -93,7 +93,7 @@ const translations = {
     },
     interestForm: "CityServe 2026 註冊問卷",
     about: {
-      date: "2026年",
+      date: "2026年 3月20-22日",
       mission_1: "以",
       mission_highlight_1: "具體的服務",
       mission_and: "和",
