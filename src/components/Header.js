@@ -68,14 +68,18 @@ const Header = ({ recapRef, joinusRef }) => {
           <Button
             bgColor="#1769B8"
             textColor="#F8F8F8"
-            fontSize="1rem"
+            fontSize="0.75rem"
             fontWeight="800"
-            href="https://forms.gle/YREGhDijBayQaEea8"
+            // href="https://forms.gle/YREGhDijBayQaEea8"
             as={Link}
+            href="#"
+            data-disabled=""
             _hover={{ bg: "#183B5D", textDecor: "none" }}
             target="_blank"
             borderRadius="0.6rem"
             p="1.5rem"
+            disabled
+            onClick={(e) => e.preventDefault()}
           >
             {translations[language].interestForm}
           </Button>
@@ -83,7 +87,11 @@ const Header = ({ recapRef, joinusRef }) => {
         </HStack>
 
         {/* Mobile version */}
-        <HStack display={{ base: "flex", lg: "none" }} w="25%" justifyContent="end">
+        <HStack
+          display={{ base: "flex", lg: "none" }}
+          w="25%"
+          justifyContent="end"
+        >
           <Button
             backgroundColor="transparent"
             onClick={toggleDropdown}
@@ -124,14 +132,18 @@ const Header = ({ recapRef, joinusRef }) => {
         <Button
           bgColor="#1769B8"
           textColor="#F8F8F8"
-          fontSize={{ base: "0.7rem", md: "1rem" }}
+          fontSize={{ base: "0.3rem", md: "0.75rem" }}
           fontWeight="800"
-          href="https://forms.gle/YREGhDijBayQaEea8"
+          // href="https://forms.gle/YREGhDijBayQaEea8"
           as={Link}
           target="_blank"
           borderRadius="0.7rem"
           h="70%"
           p={{ base: "1rem", md: "1.5rem" }}
+          href="#"
+          data-disabled=""
+          disabled
+          onClick={(e) => e.preventDefault()}
         >
           {translations[language].interestForm}
         </Button>

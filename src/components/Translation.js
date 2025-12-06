@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    interestForm: "2026 REGISTRATION FORM",
+    interestForm: "2026 FORM COMING SOON",
     header: {
       recap: "2025 RECAP",
       participate: "PARTICIPATE",
@@ -39,7 +39,7 @@ const translations = {
       title: "Join us in Cityserve 2026",
       description:
         "If you would like to take part in CityServe 2026 or if you have any questions, sign up in the form below or contact us ",
-      button_registration: "REGISTRATION FORM",
+      button_registration: "COMING SOON",
       button_giving: "GIVE TO CITYSERVE",
       link: "here",
     },
@@ -91,7 +91,7 @@ const translations = {
       recap: "2025 回顧",
       participate: "參與",
     },
-    interestForm: "CityServe 2026 註冊問卷",
+    interestForm: "CityServe 2026 表格即将推出",
     about: {
       date: "2026年 3月20-22日",
       mission_1: "以",
@@ -126,7 +126,7 @@ const translations = {
       title: "一同參與CityServe2026",
       description:
         "如果您想參加 CityServe 2026 或有任何疑問，請在下面的表格中報名或聯絡我們.",
-      button_registration: "註冊問卷",
+      button_registration: "表格即将推出",
       button_giving: "CityServe 奉獻",
       link: "聯繫我們",
     },
