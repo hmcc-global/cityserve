@@ -230,12 +230,8 @@ const ParticipateSection = forwardRef((props, ref) => {
                     height="3.125rem"
                     width="17.5rem"
                     as={Link}
-                    // target="_blank"
-                    // href="https://forms.gle/YREGhDijBayQaEea8"
-                    href="#"
-                    data-disabled=""
-                    disabled
-                    onClick={(e) => e.preventDefault()}
+                    target="_blank"
+                    href="https://forms.gle/ucGjxo2caEK36wYb6"
                     sx={{
                       _hover: {
                         textDecoration: "none",
@@ -268,6 +264,30 @@ const ParticipateSection = forwardRef((props, ref) => {
                 mt={"1.25rem"}
                 gap={{ base: "1.5rem", lg: "2rem" }}
               >
+                <Button
+                  bgColor="#183B5D"
+                  textColor="white"
+                  fontFamily="Manrope"
+                  fontWeight="900"
+                  fontSize={{ base: "0.785rem", lg: "0.85rem" }}
+                  letterSpacing="0.12rem"
+                  textAlign="center"
+                  borderRadius="0.625rem"
+                  height="3.125rem"
+                  width="fit-content"
+                  as={Link}
+                  target="_blank"
+                  href="https://forms.gle/44ri4bvJG7WuTaFf7"
+                  sx={{
+                    _hover: {
+                      textDecoration: "none",
+                      bg: "#1769B8", // Background color on hover
+                      color: "white", // Text color on hover
+                    },
+                  }}
+                >
+                  {translations[language].church_interestForm}
+                </Button>
                 <Text
                   textTransform={"uppercase"}
                   fontSize={{ base: "0.875rem", md: "1rem" }}
@@ -278,6 +298,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                 >
                   {translations[language].participate.chooseMode}
                 </Text>
+
                 <Box
                   display={"flex"}
                   flexDir={{ base: "column", lg: "row" }}
@@ -290,21 +311,21 @@ const ParticipateSection = forwardRef((props, ref) => {
                     "participant.svg",
                     translations[language].participate.participant,
                     "",
-                    translations[language].participate.participantDescription
+                    translations[language].participate.participantDescription,
                   )}
                   {CustomDivider()}
                   {InfoBox(
                     "partner.svg",
                     translations[language].participate.partner,
                     "",
-                    translations[language].participate.partnerDescription
+                    translations[language].participate.partnerDescription,
                   )}
                   {CustomDivider()}
                   {InfoBox(
                     "planner.svg",
                     translations[language].participate.planner,
                     "",
-                    translations[language].participate.plannerDescription
+                    translations[language].participate.plannerDescription,
                   )}
                 </Box>
               </Box>
@@ -341,7 +362,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     translations[language].participate.engage,
                     "",
                     translations[language].participate.engageDescription,
-                    ""
+                    "",
                   )}
                   {CustomDivider()}
                   {InfoBox(
@@ -349,7 +370,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     translations[language].participate.empower,
                     "",
                     translations[language].participate.empowerDescription,
-                    ""
+                    "",
                   )}
                   {CustomDivider()}
                   {InfoBox(
@@ -357,7 +378,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     translations[language].participate.exhibit,
                     "",
                     translations[language].participate.exhibitDescription,
-                    ""
+                    "",
                   )}
                 </Box>
               </Box>

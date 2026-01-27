@@ -1,6 +1,7 @@
 const translations = {
   en: {
     interestForm: "2026 REGISTRATION FORM",
+    church_interestForm: "2026 CHURCH REGISTRATION FORM",
     header: {
       recap: "2025 RECAP",
       participate: "PARTICIPATE",
@@ -92,6 +93,7 @@ const translations = {
       participate: "參與",
     },
     interestForm: "CityServe 2026 註冊問卷",
+    church_interestForm: "CityServe 2026 教會註冊問卷",
     about: {
       date: "2026年 3月20-22日",
       mission_1: "以",

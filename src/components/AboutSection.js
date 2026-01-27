@@ -162,13 +162,9 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 textColor="#F8F8F8"
                 fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontWeight="800"
-                // href="https://forms.gle/YREGhDijBayQaEea8"
+                href="https://forms.gle/ucGjxo2caEK36wYb6"
                 as={Link}
-                // target="_blank"
-                href="#"
-                data-disabled=""
-                disabled
-                onClick={(e) => e.preventDefault()}
+                target="_blank"
                 _hover={{ bg: "#183B5D", textDecor: "none" }}
                 fontFamily="Manrope"
                 w={{ base: "85%", md: "70%" }}
