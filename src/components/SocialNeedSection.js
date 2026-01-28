@@ -17,7 +17,7 @@ const SocialNeedSection = () => {
         borderColor="#F8F8F8"
         p={{ base: "0.3rem", lg: "0.3rem", xl: "1rem" }}
         w={"100%"}
-        h={{ base: "15rem", md: "13rem", lg: "15rem" }}
+        h={{ base: "12rem", md: "13rem", lg: "15rem" }}
         bgColor={color}
       >
         <Image
@@ -84,70 +84,70 @@ const SocialNeedSection = () => {
               {SocialNeedsDisplay(
                 "images/social_needs/need_children.png",
                 translations[language].socialNeed.children,
-                "#DAEDFA"
+                "#DAEDFA",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_helpers.png",
                 translations[language].socialNeed.domesticHelpers,
-                "#F9EEE3"
+                "#F9EEE3",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_issues.png",
                 translations[language].socialNeed.domesticIssues,
-                "#DAEDFA"
+                "#DAEDFA",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_elder.png",
                 translations[language].socialNeed.elderly,
-                "#F9EEE3"
+                "#F9EEE3",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_ethnic.png",
                 translations[language].socialNeed.ethnicMinorities,
-                "#DAEDFA"
+                "#DAEDFA",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_disabled.png",
                 translations[language].socialNeed.handicapped,
-                "#F9EEE3"
+                "#F9EEE3",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_environment.png",
                 translations[language].socialNeed.environmental,
-                "#DAEDFA"
+                "#DAEDFA",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_poor.png",
                 translations[language].socialNeed.poor,
-                "#F9EEE3"
+                "#F9EEE3",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_mental.png",
                 translations[language].socialNeed.mentalHealth,
-                "#DAEDFA"
+                "#DAEDFA",
               )}
             </GridItem>
             <GridItem>
               {SocialNeedsDisplay(
                 "images/social_needs/need_income.png",
                 translations[language].socialNeed.lowIncome,
-                "#F9EEE3"
+                "#F9EEE3",
               )}
             </GridItem>
           </Grid>

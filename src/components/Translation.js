@@ -92,8 +92,8 @@ const translations = {
       recap: "2025 回顧",
       participate: "參與",
     },
-    interestForm: "CityServe 2026 註冊問卷",
-    church_interestForm: "CityServe 2026 教會註冊問卷",
+    interestForm: "CityServe 2026 註冊表格",
+    church_interestForm: "CityServe 2026 教會註冊表格",
     about: {
       date: "2026年 3月20-22日",
       mission_1: "以",
@@ -128,7 +128,7 @@ const translations = {
       title: "一同參與CityServe2026",
       description:
         "如果您想參加 CityServe 2026 或有任何疑問，請在下面的表格中報名或聯絡我們.",
-      button_registration: "註冊問卷",
+      button_registration: "註冊表格",
       button_giving: "CityServe 奉獻",
       link: "聯繫我們",
     },
