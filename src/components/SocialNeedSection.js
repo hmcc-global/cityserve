@@ -15,7 +15,11 @@ const SocialNeedSection = () => {
         border="1px"
         borderRadius="10px"
         borderColor="#F8F8F8"
-        p={{ base: "0.3rem", lg: "0.3rem", xl: "1rem" }}
+        p={
+          language === "en"
+            ? { base: "0.3rem", lg: "0.3rem", xl: "1rem" }
+            : { base: "2.8rem", lg: "0.3rem", xl: "1rem" }
+        }
         w={"100%"}
         h={{ base: "12rem", md: "13rem", lg: "15rem" }}
         bgColor={color}
