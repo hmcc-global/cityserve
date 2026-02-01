@@ -1,4 +1,12 @@
-import { Text, VStack, Container, Box, Flex, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Text,
+  VStack,
+  Container,
+  Box,
+  Flex,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import { useLanguage } from "./LanguageToggle";
 import translations from "./Translation";
 
@@ -31,7 +39,11 @@ const PartnersSection = () => {
             bgPosition="center"
             bgRepeat="no-repeat"
           ></GridItem>
-          <GridItem display="flex" justifyContent="center" alignItems={"center"}>
+          <GridItem
+            display="flex"
+            justifyContent="center"
+            alignItems={"center"}
+          >
             <Text
               fontWeight={800}
               fontSize={{ base: "0.875rem", md: "1rem" }}
@@ -112,12 +124,12 @@ const PartnersSection = () => {
           {PartnerDisplayBox("images/one-htw.avif", "ONE CAMPAIGN")}
           {PartnerDisplayBox(
             "images/partnered_logo_3.png",
-            "HONG KONG CHURCH NETWORK FOR THE POOR"
+            "HONG KONG CHURCH NETWORK FOR THE POOR",
           )}
           {PartnerDisplayBox("images/christian_action.png", "CHRISTIAN ACTION")}
           {PartnerDisplayBox("images/manna.png", "MANNA MINISTRY")}
           {PartnerDisplayBox("images/mothers_choice.png", "MOTHER'S CHOICE")}
-          {PartnerDisplayBox("images/s&d.png", "SONS & DAUGHTER HK")}
+          {PartnerDisplayBox("images/s&d.png", "SONS & DAUGHTERS HK")}
           {/* {PartnerDisplayBox(
             "images/partnered_logo_5.png",
             "jesus the living god international ministry"
@@ -125,15 +137,21 @@ const PartnersSection = () => {
           {PartnerDisplayBox("images/uu.png", "ULTIMATE UNITED")}
           {PartnerDisplayBox(
             "images/ksa.png",
-            "THE HONG KONG CHRISTIAN KUN SUN ASSOCIATION"
+            "THE HONG KONG CHRISTIAN KUN SUN ASSOCIATION",
           )}
           {PartnerDisplayBox(
             "images/principal_chan.png",
-            "PRINCIPAL CHAN FREE TUTORIAL WORLD"
+            "PRINCIPAL CHAN FREE TUTORIAL WORLD",
           )}
           {PartnerDisplayBox("images/wai-ji.png", "WAI JI CHRISTIAN SERVICE")}
-          {PartnerDisplayBox("images/logo-yes.png", "YOUTH EMPOWERMENT SERVICE")}
-          {PartnerDisplayBox("images/partnered_logo_2.png", "INNER CITY MINISTRIES")}
+          {PartnerDisplayBox(
+            "images/logo-yes.png",
+            "YOUTH EMPOWERMENT SERVICE",
+          )}
+          {PartnerDisplayBox(
+            "images/partnered_logo_2.png",
+            "INNER CITY MINISTRIES",
+          )}
         </Flex>
         <Box display={{ base: "flex", lg: "none" }} w="100%" p={0}>
           <Grid templateColumns="repeat(2, 1fr)" gap={"6"}>
@@ -143,15 +161,23 @@ const PartnersSection = () => {
             <GridItem>
               {PartnerDisplayBox(
                 "images/partnered_logo_3.png",
-                "hong kong church network for the poor"
+                "hong kong church network for the poor",
               )}
             </GridItem>
             <GridItem>
-              {PartnerDisplayBox("images/christian_action.png", "christian action")}
+              {PartnerDisplayBox(
+                "images/christian_action.png",
+                "christian action",
+              )}
             </GridItem>
-            <GridItem>{PartnerDisplayBox("images/manna.png", "MANNA MINISTRY")}</GridItem>
             <GridItem>
-              {PartnerDisplayBox("images/mothers_choice.png", "MOTHER'S CHOICE")}
+              {PartnerDisplayBox("images/manna.png", "MANNA MINISTRY")}
+            </GridItem>
+            <GridItem>
+              {PartnerDisplayBox(
+                "images/mothers_choice.png",
+                "MOTHER'S CHOICE",
+              )}
             </GridItem>
             <GridItem>
               {PartnerDisplayBox("images/s&d.png", "SONS & DAUGHTER HK")}
@@ -159,24 +185,42 @@ const PartnersSection = () => {
             <GridItem>
               {PartnerDisplayBox(
                 "images/partnered_logo_5.png",
-                "jesus the living god international ministry"
+                "jesus the living god international ministry",
               )}
             </GridItem>
-            <GridItem>{PartnerDisplayBox("images/uu.png", "ULTIMATE UNITED")}</GridItem>
-            <GridItem>{PartnerDisplayBox(
-                        "images/ksa.png",
-                        "THE HONG KONG CHRISTIAN KUN SUN ASSOCIATION"
-                      )}
+            <GridItem>
+              {PartnerDisplayBox("images/uu.png", "ULTIMATE UNITED")}
             </GridItem>
             <GridItem>
-            {PartnerDisplayBox(
-              "images/principal_chan.png",
-              "PRINCIPAL CHAN FREE TUTORIAL WORLD"
-            )}
+              {PartnerDisplayBox(
+                "images/ksa.png",
+                "THE HONG KONG CHRISTIAN KUN SUN ASSOCIATION",
+              )}
             </GridItem>
-            <GridItem>{PartnerDisplayBox("images/wai-ji.png", "WAI JI CHRISTIAN SERVICE")}</GridItem>
-            <GridItem>{PartnerDisplayBox("images/logo-yes.png", "YOUTH EMPOWERMENT SERVICE")}</GridItem>
-            <GridItem>{PartnerDisplayBox("images/partnered_logo_2.png", "INNER CITY MINISTRIES")}</GridItem>
+            <GridItem>
+              {PartnerDisplayBox(
+                "images/principal_chan.png",
+                "PRINCIPAL CHAN FREE TUTORIAL WORLD",
+              )}
+            </GridItem>
+            <GridItem>
+              {PartnerDisplayBox(
+                "images/wai-ji.png",
+                "WAI JI CHRISTIAN SERVICE",
+              )}
+            </GridItem>
+            <GridItem>
+              {PartnerDisplayBox(
+                "images/logo-yes.png",
+                "YOUTH EMPOWERMENT SERVICE",
+              )}
+            </GridItem>
+            <GridItem>
+              {PartnerDisplayBox(
+                "images/partnered_logo_2.png",
+                "INNER CITY MINISTRIES",
+              )}
+            </GridItem>
           </Grid>
         </Box>
       </Box>
