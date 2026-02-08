@@ -8,6 +8,8 @@ import {
   Link,
   Img,
   Button,
+  Center,
+  AspectRatio,
 } from "@chakra-ui/react";
 import { useLanguage } from "./LanguageToggle";
 import translations from "./Translation";
@@ -208,16 +210,63 @@ const AboutSection = ({ recapRef, participateRef }) => {
           </VStack>
         </Box>
 
-        <VStack
-          pb={{ base: "5", sm: "10" }}
-          paddingTop="1rem"
-          fontFamily="Manrope"
+        <Center mt={8} display={{ base: "flex", md: "none" }}>
+          <AspectRatio
+            width={{ base: "22rem", md: "25rem", lg: "47vw" }}
+            ratio={16 / 9}
+          >
+            <iframe
+              title="video-embed"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              src="https://www.youtube.com/embed/OqS3rFBctnM?si=RexcXwLvRvW3YhWK"
+            />
+          </AspectRatio>
+        </Center>
+        <HStack
+          w="100%"
+          my={{ base: "0", md: "5vh" }}
+          h={{ base: "20vh", md: "30vh", lg: "50vh" }}
+          gap="5"
+          bgColor="#183B5D"
+          bgImage={{
+            base: `url(${process.env.PUBLIC_URL}/images/promo_bg.png)`,
+            md: `url(${process.env.PUBLIC_URL}/images/promo_bg_desktop.png)`,
+          }}
+          bgRepeat="no-repeat"
+          bgPosition="center"
+          bgSize="cover"
+          justifyContent="space-around"
+          px="5"
         >
+          <Center display={{ base: "none", md: "flex" }}>
+            <AspectRatio
+              width={{ base: "22rem", md: "25rem", lg: "47vw" }}
+              ratio={16 / 9}
+            >
+              <iframe
+                title="video-embed"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                src="https://www.youtube.com/embed/OqS3rFBctnM?si=RexcXwLvRvW3YhWK"
+              />
+            </AspectRatio>
+          </Center>
+          <Text
+            fontSize={{ base: "1.7rem", md: "3rem" }}
+            fontWeight="700"
+            textColor="#183B5D"
+            fontFamily="Antonio"
+            textAlign="center"
+          >
+            {translations[language].about.promo}
+          </Text>
+        </HStack>
+        <VStack pb={{ base: "5", sm: "10" }} fontFamily="Manrope">
           {/* Desktop version */}
           <HStack
             w="100%"
             alignItems="flex-start"
-            paddingTop="5vw"
             display={{ base: "none", lg: "flex" }}
             letterSpacing="0.05rem"
           >

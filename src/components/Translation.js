@@ -15,6 +15,7 @@ const translations = {
       mission_2: "GOD'S LOVE FOR THE CITY",
       learnHow: "LEARN HOW YOU CAN TAKE PART",
       whatIs: "WHAT IS CITYSERVE?",
+      promo: "ARE YOU READY FOR CITYSERVE 2026?",
       description_1:
         "CityServe Hong Kong is a city-wide movement for local churches united in their mission to serve communities across Hong Kong and to demonstrate God’s love for the city.",
       description_2:
@@ -103,6 +104,7 @@ const translations = {
       mission_2: `向我們的城市表揚上帝的愛`,
       learnHow: "如何參與",
       whatIs: "什麼是CityServe？",
+      promo: "你準備好為CityServe 2026服侍了嗎？",
       description_1:
         "CityServe是服務香港全市的一項活動，希望與當地教會和組織合作，一起以具體的方式表達上帝的愛。",
       description_2:
