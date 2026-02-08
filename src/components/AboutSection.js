@@ -212,7 +212,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
 
         <Center mt={8} display={{ base: "flex", md: "none" }}>
           <AspectRatio
-            width={{ base: "22rem", md: "25rem", lg: "47vw" }}
+            width={{ base: "22rem", md: "25rem", lg: "45vw" }}
             ratio={16 / 9}
           >
             <iframe
