@@ -253,7 +253,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
             </AspectRatio>
           </Center>
           <Text
-            fontSize={{ base: "1.7rem", md: "3rem" }}
+            fontSize={{ base: "1.7rem", md: "2.4rem" }}
             fontWeight="700"
             textColor="#183B5D"
             fontFamily="Antonio"
