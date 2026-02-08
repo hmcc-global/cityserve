@@ -206,7 +206,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                       {translations[language].joinUs.description}
                       &nbsp;
                       <Link
-                        href="https://linktr.ee/cityservehk"
+                        href="mailto:admin@cityserve.hk"
                         target="_blank"
                         variant="underline"
                         fontWeight="700"

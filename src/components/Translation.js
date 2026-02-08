@@ -43,7 +43,7 @@ const translations = {
         "If you would like to take part in CityServe 2026 or if you have any questions, sign up in the form below or contact us ",
       button_registration: "REGISTRATION FORM",
       button_giving: "GIVE TO CITYSERVE",
-      link: "here",
+      link: "admin@cityserve.hk",
     },
     recap: {
       title: "A RECAP OF CITYSERVE 2025",
@@ -132,7 +132,7 @@ const translations = {
         "如果您想參加 CityServe 2026 或有任何疑問，請在下面的表格中報名或聯絡我們.",
       button_registration: "註冊表格",
       button_giving: "CityServe 奉獻",
-      link: "聯繫我們",
+      link: "admin@cityserve.hk",
     },
     recap: {
       title: "回顧2025年CityServe",
