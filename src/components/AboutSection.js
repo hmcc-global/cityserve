@@ -164,7 +164,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 textColor="#F8F8F8"
                 fontSize={{ base: "0.875rem", md: "1.25rem" }}
                 fontWeight="800"
-                href="https://forms.gle/ucGjxo2caEK36wYb6"
+                // href="https://forms.gle/ucGjxo2caEK36wYb6"
                 as={Link}
                 target="_blank"
                 _hover={{ bg: "#183B5D", textDecor: "none" }}
@@ -173,6 +173,7 @@ const AboutSection = ({ recapRef, participateRef }) => {
                 borderRadius="0.6rem"
                 letterSpacing="0.12em"
                 p={{ base: "1rem", md: "1.75rem" }}
+                isDisabled
               >
                 {translations[language].interestForm}
               </Button>

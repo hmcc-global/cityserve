@@ -70,13 +70,13 @@ const Header = ({ recapRef, joinusRef }) => {
             textColor="#F8F8F8"
             fontSize="0.75rem"
             fontWeight="800"
-            href="https://forms.gle/ucGjxo2caEK36wYb6"
+            //href="https://forms.gle/ucGjxo2caEK36wYb6"
             as={Link}
             _hover={{ bg: "#183B5D", textDecor: "none" }}
             target="_blank"
             borderRadius="0.6rem"
             p="1.5rem"
-            disabled
+            isDisabled
           >
             {translations[language].interestForm}
           </Button>
@@ -131,12 +131,13 @@ const Header = ({ recapRef, joinusRef }) => {
           textColor="#F8F8F8"
           fontSize={{ base: "0.3rem", md: "0.75rem" }}
           fontWeight="800"
-          href="https://forms.gle/ucGjxo2caEK36wYb6"
+          // href="https://forms.gle/ucGjxo2caEK36wYb6"
           as={Link}
           target="_blank"
           borderRadius="0.7rem"
           h="70%"
           p={{ base: "1rem", md: "1.5rem" }}
+          isDisabled
         >
           {translations[language].interestForm}
         </Button>

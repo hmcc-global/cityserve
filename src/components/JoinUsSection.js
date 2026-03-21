@@ -99,7 +99,7 @@ const JoinUsSection = forwardRef((props, ref) => {
               width={{ base: "100%", md: "17.5rem" }}
               as={Link}
               target="_blank"
-              href="https://forms.gle/ucGjxo2caEK36wYb6"
+              // href="https://forms.gle/ucGjxo2caEK36wYb6"
               sx={{
                 _hover: {
                   textDecoration: "none",
@@ -107,6 +107,7 @@ const JoinUsSection = forwardRef((props, ref) => {
                   color: "white", // Text color on hover
                 },
               }}
+              isDisabled
             >
               {translations[language].joinUs.button_registration}
             </Button>

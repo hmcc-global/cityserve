@@ -231,7 +231,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                     width="17.5rem"
                     as={Link}
                     target="_blank"
-                    href="https://forms.gle/ucGjxo2caEK36wYb6"
+                    // href="https://forms.gle/ucGjxo2caEK36wYb6"
                     sx={{
                       _hover: {
                         textDecoration: "none",
@@ -239,6 +239,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                         color: "white", // Text color on hover
                       },
                     }}
+                    isDisabled
                   >
                     {translations[language].interestForm}
                   </Button>
@@ -277,7 +278,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                   width="fit-content"
                   as={Link}
                   target="_blank"
-                  href="https://forms.gle/44ri4bvJG7WuTaFf7"
+                  // href="https://forms.gle/44ri4bvJG7WuTaFf7"
                   sx={{
                     _hover: {
                       textDecoration: "none",
@@ -285,6 +286,7 @@ const ParticipateSection = forwardRef((props, ref) => {
                       color: "white", // Text color on hover
                     },
                   }}
+                  isDisabled
                 >
                   {translations[language].church_interestForm}
                 </Button>

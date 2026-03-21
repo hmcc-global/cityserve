@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    interestForm: "2026 REGISTRATION FORM",
-    church_interestForm: "2026 CHURCH REGISTRATION FORM",
+    interestForm: "CLOSED",
+    church_interestForm: "CLOSED",
     header: {
       recap: "2025 RECAP",
       participate: "PARTICIPATE",
@@ -41,7 +41,7 @@ const translations = {
       title: "Join us in Cityserve 2026",
       description:
         "If you would like to take part in CityServe 2026 or if you have any questions, sign up in the form below or contact us ",
-      button_registration: "REGISTRATION FORM",
+      button_registration: "CLOSED",
       button_giving: "GIVE TO CITYSERVE",
       link: "admin@cityserve.hk",
     },
@@ -93,8 +93,8 @@ const translations = {
       recap: "2025 回顧",
       participate: "參與",
     },
-    interestForm: "CityServe 2026 註冊表格",
-    church_interestForm: "CityServe 2026 教會註冊表格",
+    interestForm: "该表格已关闭",
+    church_interestForm: "该表格已关闭",
     about: {
       date: "2026年 3月20-22日",
       mission_1: "以",
@@ -130,7 +130,7 @@ const translations = {
       title: "一同參與CityServe2026",
       description:
         "如果您想參加 CityServe 2026 或有任何疑問，請在下面的表格中報名或聯絡我們.",
-      button_registration: "註冊表格",
+      button_registration: "该表格已关闭",
       button_giving: "CityServe 奉獻",
       link: "admin@cityserve.hk",
     },
